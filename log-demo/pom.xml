@@ -4,28 +4,15 @@
         <artifactId>demo</artifactId>
         <groupId>cn.thinkjoy.scala4fun</groupId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.thinkjoy.scala4fun</groupId>
     <artifactId>log-demo</artifactId>
     <inceptionYear>2008</inceptionYear>
-    <properties>
-        <scala.version>2.10.4</scala.version>
-    </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.scala-lang</groupId>
-            <artifactId>scala-compiler</artifactId>
-            <version>${scala.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.scalatest</groupId>
-            <artifactId>scalatest_2.10</artifactId>
-            <version>2.1.5</version>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
@@ -33,12 +20,11 @@
         </dependency>
         <dependency>
             <groupId>org.log4s</groupId>
-            <artifactId>log4s_2.10</artifactId>
+            <artifactId>log4s_${soft.scala.version}</artifactId>
             <version>1.2.0</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
-
     <build>
         <sourceDirectory>src/main/scala</sourceDirectory>
         <testSourceDirectory>src/test/scala</testSourceDirectory>
