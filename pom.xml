@@ -32,6 +32,7 @@
     <modules>
         <module>log-demo</module>
         <module>unittest-demo</module>
+        <module>scala-demo</module>
     </modules>
 
     <build>

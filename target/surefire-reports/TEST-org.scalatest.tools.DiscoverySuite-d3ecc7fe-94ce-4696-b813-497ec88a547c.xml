@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite 
+errors="0" failures="0" hostname="suxiaobaodeMBP.lan" name="org.scalatest.tools.DiscoverySuite" tests="0" time="0.02" timestamp="2015-10-17T12:25:38">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment">
+    </property>
+    <property 
+    name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib">
+</property>
+    <property name="java.vm.version" value="24.71-b01"> </property>
+    <property name="gopherProxySet" value="false"> </property>
+    <property name="java.vm.vendor" value="Oracle Corporation"> </property>
+    <property name="java.vendor.url" value="http://java.oracle.com/">
+    </property>
+    <property name="path.separator" value=":"> </property>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM">
+    </property>
+    <property name="file.encoding.pkg" value="sun.io"> </property>
+    <property name="user.country" value="CN"> </property>
+    <property name="sun.java.launcher" value="SUN_STANDARD"> </property>
+    <property name="sun.os.patch.level" value="unknown"> </property>
+    <property 
+    name="java.vm.specification.name" value="Java Virtual Machine Specification">
+</property>
+    <property name="user.dir" value="/Users/xbsu/workspace/demo"> </property>
+    <property name="java.runtime.version" value="1.7.0_71-b14"> </property>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment">
+    </property>
+    <property name="basedir" value="/Users/xbsu/workspace/demo"> </property>
+    <property 
+    name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/endorsed">
+</property>
+    <property name="os.arch" value="x86_64"> </property>
+    <property 
+    name="java.io.tmpdir" value="/var/folders/93/6ll6524j2s1_2vt_8kgtvc_n4ctfcr/T/">
+</property>
+    <property name="line.separator" value=" "> </property>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation">
+    </property>
+    <property name="os.name" value="Mac OS X"> </property>
+    <property name="sun.jnu.encoding" value="UTF-8"> </property>
+    <property 
+    name="java.library.path" value="/Users/xbsu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.">
+</property>
+    <property 
+    name="java.specification.name" value="Java Platform API Specification">
+</property>
+    <property name="java.class.version" value="51.0"> </property>
+    <property 
+    name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers">
+</property>
+    <property name="os.version" value="10.10"> </property>
+    <property 
+    name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16">
+</property>
+    <property name="user.home" value="/Users/xbsu"> </property>
+    <property name="user.timezone" value=""> </property>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob">
+    </property>
+    <property name="file.encoding" value="UTF-8"> </property>
+    <property name="java.specification.version" value="1.7"> </property>
+    <property name="user.name" value="xbsu"> </property>
+    <property 
+    name="java.class.path" value="/Users/xbsu/workspace/demo/target/test-classes:/Users/xbsu/workspace/demo/target/classes:/Users/xbsu/.m2/repository/org/scala-lang/scala-compiler/2.10.4/scala-compiler-2.10.4.jar:/Users/xbsu/.m2/repository/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar:/Users/xbsu/.m2/repository/org/scala-lang/scala-reflect/2.10.4/scala-reflect-2.10.4.jar:/Users/xbsu/.m2/repository/org/scalatest/scalatest_2.10/2.1.5/scalatest_2.10-2.1.5.jar">
+</property>
+    <property name="java.vm.specification.version" value="1.7"> </property>
+    <property name="sun.arch.data.model" value="64"> </property>
+    <property 
+    name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre">
+</property>
+    <property 
+    name="sun.java.command" value="org.scalatest.tools.Runner -R /Users/xbsu/workspace/demo/target/classes /Users/xbsu/workspace/demo/target/test-classes -o -fWDF /Users/xbsu/workspace/demo/target/surefire-reports/TestSuite.txt -u /Users/xbsu/workspace/demo/target/surefire-reports/.">
+</property>
+    <property name="java.specification.vendor" value="Oracle Corporation">
+    </property>
+    <property name="user.language" value="zh"> </property>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit">
+    </property>
+    <property name="java.vm.info" value="mixed mode"> </property>
+    <property name="java.version" value="1.7.0_71"> </property>
+    <property 
+    name="java.ext.dirs" value="/Users/xbsu/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java">
+</property>
+    <property 
+    name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/classes">
+</property>
+    <property name="java.vendor" value="Oracle Corporation"> </property>
+    <property name="file.separator" value="/"> </property>
+    <property 
+    name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/">
+</property>
+    <property name="sun.cpu.endian" value="little"> </property>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"> </property>
+    <property 
+    name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16">
+</property>
+    <property 
+    name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16">
+</property>
+    <property name="sun.cpu.isalist" value=""> </property>
+  </properties>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
