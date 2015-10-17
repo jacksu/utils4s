@@ -19,6 +19,11 @@ object PatternMatching {
     case _ => "what?"
   }
 
+  /**
+   * 模式匹配代替表达式
+   * @param expr
+   * @return
+   */
   def expression(expr: Any) = expr match {
     case ("porridge", bear) => bear + " said someone's been eating my porridge"
     case ("chair", bear) => bear + " said someone's been sitting in my chair"

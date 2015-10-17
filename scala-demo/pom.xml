@@ -11,14 +11,6 @@
     <artifactId>scala-demo</artifactId>
     <inceptionYear>2008</inceptionYear>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.scalatest</groupId>
-            <artifactId>scalatest_${soft.scala.version}</artifactId>
-            <version>2.1.5</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
     <build>
         <sourceDirectory>src/main/scala</sourceDirectory>
         <testSourceDirectory>src/test/scala</testSourceDirectory>
