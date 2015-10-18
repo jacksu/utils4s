@@ -31,6 +31,11 @@ object PatternMatching {
     case _ => "what?"
   }
 
+  def patternEquals(i: Int, j: Int) = j match {
+    case `i` => true
+    case _ => false
+  }
+
   def main(args: Array[String]) {
     println(matchTest(3))
 
@@ -57,5 +62,7 @@ object PatternMatching {
 
     //模式匹配代替表达式
     println(expression( ("chair", "jack")))
+
+    println(patternEquals(3,3))
   }
 }

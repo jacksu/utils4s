@@ -10,8 +10,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <scala.version>2.10.4</scala.version>
-        <soft.scala.version>2.10</soft.scala.version>
+        <scala.version>2.11.4</scala.version>
+        <soft.scala.version>2.11</soft.scala.version>
     </properties>
 
     <dependencies>
@@ -23,7 +23,7 @@
         </dependency>
         <dependency>
             <groupId>org.scalatest</groupId>
-            <artifactId>scalatest_2.10</artifactId>
+            <artifactId>scalatest_${soft.scala.version}</artifactId>
             <version>2.1.5</version>
             <scope>test</scope>
         </dependency>
@@ -33,6 +33,7 @@
         <module>log-demo</module>
         <module>unittest-demo</module>
         <module>scala-demo</module>
+        <module>lamma-demo</module>
     </modules>
 
     <build>
