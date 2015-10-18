@@ -11,11 +11,13 @@ object BasicOper {
     //============== create date ===========
     println(Date(2014, 7, 7).toISOString) //2014-07-07
     println(Date("2014-07-7").toISOInt) //20140707
+    println(Date.today())
 
     //============== compare two date ===========
     println(Date(2014, 7, 7) < Date(2014, 7, 8))
     println((2014, 7, 7) <(2014, 7, 8))
     println(Date("2014-07-7") > Date("2014-7-8"))
+    println(Date("2014-07-10") - Date("2014-7-8"))
 
     // ========== manipulate dates =============
     println(Date(2014, 7, 7) + 1)
