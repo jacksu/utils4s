@@ -35,6 +35,7 @@
         <module>scala-demo</module>
         <module>lamma-demo</module>
         <module>nscala-time-demo</module>
+        <module>json4s-demo</module>
     </modules>
 
     <build>
