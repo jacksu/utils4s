@@ -7,7 +7,7 @@ import org.json4s.jackson.JsonMethods._
 object Json4sDemo {
   def main(args: Array[String]) {
     //=========== 通过字符串解析为json AST ==============
-    val json1 = """ { "numbers" : [1, 2, 3, 4] } """
+    val json1 = """ {"name":"test", "numbers" : [1, 2, 3, 4] } """
     println(parse(json1))
 
     //============= 通过DSL解析为json AST ===========
@@ -47,10 +47,43 @@ object Json4sDemo {
 
 
     //=========== querying json ===============
-    val name = for {
-      JField("name",JString(name)) <- json2
+    val json4 = parse( """
+         { "name": "joe",
+           "children": [
+             {
+               "name": "Mary",
+               "age": 5
+             },
+             {
+               "name": "Mazy",
+               "age": 3
+             }
+           ]
+         }
+                       """)
+    // TODO name:"joe"
+    val ages = for {
+      JObject(child) <- json4
+      JField("age", JInt(age)) <- child
+      if age > 4
+    } yield age
+    val name = for{
+      JString(name) <- json4
     } yield name
+    println(ages)
     println(name)
+    println(compact(render(json4 \\ "name")))
+    println(compact(render(json4 \ "name")))
+    println(compact(render(json4 \\ "children")))
+    println(compact(render(json4 \ "children" \ "name")))
+    println(compact(render(json4 findField {
+      case JField("name", _) => true
+      case _ => false
+    })))
+    println(compact(render(json4 filterField {
+      case JField("name", _) => true
+      case _ => false
+    })))
 
   }
 }
