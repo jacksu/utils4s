@@ -1,7 +1,9 @@
 # utils4s
-包含scala各种通用、好玩库的demo，方便在项目中使用，同时欢迎大家贡献各种好玩的库。
+utils4s包含各种scala通用、好玩的工具库使用demo，通过简单demo，可以快速使用，提高工作效率。
 
-现已包含：
+**同时欢迎大家贡献各种好玩的、经常使用的工具库。**
+
+## common库
 
 [日志log4s](https://github.com/Log4s/log4s)
 
@@ -14,3 +16,5 @@
 [日期时间操作nscala-time](https://github.com/nscala-time/nscala-time)（注：没有每月多少天，每月最后一天，以及每年多少天）
 
 [json解析json4s](https://github.com/jacksu/utils4s/tree/master/json4s-demo)
+
+## BigData库
