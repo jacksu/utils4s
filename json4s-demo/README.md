@@ -1,5 +1,8 @@
 #json4s
-AST有如下的语法树：
+json的各种形式的相互转化图如下：
+![Json AST](https://raw.github.com/json4s/json4s/3.4/core/json.png)
+
+其中的关键是AST，AST有如下的语法树：
 ```scala
 sealed abstract class JValue
 case object JNothing extends JValue // 'zero' for JValue
@@ -14,6 +17,3 @@ case class JArray(arr: List[JValue]) extends JValue
 
 type JField = (String, JValue)
 ```
-
-相互形式的转化图如下：
-![Json AST](https://raw.github.com/json4s/json4s/3.4/core/json.png)
