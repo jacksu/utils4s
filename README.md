@@ -13,4 +13,4 @@
 
 [日期时间操作nscala-time](https://github.com/nscala-time/nscala-time)（注：没有每月多少天，每月最后一天，以及每年多少天）
 
-[json解析json4s](https://github.com/json4s/json4s)
+[json解析json4s](https://github.com/jacksu/utils4s/tree/master/json4s-demo)

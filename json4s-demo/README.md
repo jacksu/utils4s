@@ -17,3 +17,12 @@ case class JArray(arr: List[JValue]) extends JValue
 
 type JField = (String, JValue)
 ```
+
+> * String -> AST
+```scala
+val ast=parse(""" {"name":"test", "numbers" : [1, 2, 3, 4] } """)
+result: JObject(List((name,JString(test)), (numbers,JArray(List(JInt(1), JInt(2), JInt(3), JInt(4))))))
+```
+
+参考：
+[json4s](https://github.com/json4s/json4s)
