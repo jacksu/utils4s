@@ -71,19 +71,35 @@ object Json4sDemo {
       JString(name) <- json4
     } yield name
     println(ages)
+    //List(joe, Mary, Mazy)
     println(name)
+    //{"name":"joe","name":"Mary","name":"Mazy"}
     println(compact(render(json4 \\ "name")))
+    //"joe"
     println(compact(render(json4 \ "name")))
+    //[{"name":"Mary","age":5},{"name":"Mazy","age":3}]
     println(compact(render(json4 \\ "children")))
+    //["Mary","Mazy"]
     println(compact(render(json4 \ "children" \ "name")))
+    //{"name":"joe"}
     println(compact(render(json4 findField {
       case JField("name", _) => true
       case _ => false
     })))
+    //{"name":"joe","name":"Mary","name":"Mazy"}
     println(compact(render(json4 filterField {
       case JField("name", _) => true
       case _ => false
     })))
 
+    //============== extract value =================
+    implicit val formats = DefaultFormats
+    val json5 = parse("""{"first_name":"Mary"}""")
+    case class Person(`firstName`: String)
+    val json6=json5 transformField {
+      case ("first_name", x) => ("firstName", x)
+    }
+    println(json6.extract[Person])
+    println(json5.camelizeKeys.extract[Person])
   }
 }
