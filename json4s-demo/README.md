@@ -23,6 +23,14 @@ type JField = (String, JValue)
 val ast=parse(""" {"name":"test", "numbers" : [1, 2, 3, 4] } """)
 result: JObject(List((name,JString(test)), (numbers,JArray(List(JInt(1), JInt(2), JInt(3), JInt(4))))))
 ```
+> * Json DSL -> AST
+```scala
+import org.json4s.JsonDSL._
+//DSL implicit AST
+val json2 = ("name" -> "joe") ~ ("age" -> Some(35))
+println(json2)
+result:JObject(List((name,JString(joe)), (age,JInt(35))))
+```
 
 参考：
 [json4s](https://github.com/json4s/json4s)
