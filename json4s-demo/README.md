@@ -31,6 +31,19 @@ val json2 = ("name" -> "joe") ~ ("age" -> Some(35))
 println(json2)
 result:JObject(List((name,JString(joe)), (age,JInt(35))))
 ```
-
+> * AST -> String
+```scala
+val str=compact(render(json2))
+println(str)
+result:{"name":"joe","age":35}
+#pretty
+val pretty=pretty(render(json2))
+println(pretty)
+result:
+{
+  "name" : "joe",
+  "age" : 35
+}
+```
 参考：
 [json4s](https://github.com/json4s/json4s)
