@@ -36,7 +36,6 @@ result:JObject(List((name,JString(joe)), (age,JInt(35))))
 val str=compact(render(json2))
 println(str)
 result:{"name":"joe","age":35}
-
 //pretty
 val pretty=pretty(render(json2))
 println(pretty)
