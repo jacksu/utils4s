@@ -97,5 +97,6 @@ result:
 Person(Mary)
 Person(Mary)
 ```
+
 参考：
 [json4s](https://github.com/json4s/json4s)

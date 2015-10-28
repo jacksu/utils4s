@@ -101,5 +101,28 @@ object Json4sDemo {
     }
     println(json6.extract[Person])
     println(json5.camelizeKeys.extract[Person])
+
+    //================ xml 2 json ===================
+    import org.json4s.Xml.{toJson, toXml}
+    val xml =
+      <users>
+        <user>
+          <id>1</id>
+          <name>Harry</name>
+        </user>
+        <user>
+          <id>2</id>
+          <name>David</name>
+        </user>
+      </users>
+
+    val json = toJson(xml)
+    println(pretty(render(json)))
+    println(pretty(render(json transformField {
+      case ("id", JString(s)) => ("id", JInt(s.toInt))
+      case ("user", x: JObject) => ("user", JArray(x :: Nil))
+    })))
+    //================ json 2 xml ===================
+    println(toXml(json))
   }
 }
