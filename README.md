@@ -1,4 +1,4 @@
-# utils4s[![Join the chat at https://gitter.im/jacksu/utils4s](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jacksu/utils4s?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# utils4s[![Build Status](https://travis-ci.org/jacksu/utils4s.svg?branch=master)](https://travis-ci.org/jacksu/utils4s)[![Join the chat at https://gitter.im/jacksu/utils4s](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jacksu/utils4s?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 utils4s包含各种scala通用、好玩的工具库使用demo，通过简单demo，可以快速使用，提高工作效率。
 
