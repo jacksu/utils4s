@@ -1,0 +1,4 @@
+language: scala
+scala:
+   - 2.10.4
+script: sudo mvn install -DskipTests=true -Dmaven.javadoc.skip=true
