@@ -3,21 +3,15 @@ package cn.thinkjoy.scala4fun
 import org.log4s._
 
 /**
- * Created by xbsu on 15/9/24.
+ * Created by jacksu on 15/9/24.
  */
 
-case class ClassWithPrivateFields(name: String){
 
-}
-
-class LoggingTest {
-  private[this] val log=getLogger
+class LoggingTest extends Logging{
   def logPrint(): Unit ={
-    log.debug("debug log")
-    log.info("info log")
-    log.warn("warn log")
-    log.error("error log")
-    val test=ClassWithPrivateFields("test")
-    test.name
+    logger.debug("debug log")
+    logger.info("info log")
+    logger.warn("warn log")
+    logger.error("error log")
   }
 }

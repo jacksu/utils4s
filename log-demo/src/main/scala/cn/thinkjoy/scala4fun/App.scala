@@ -7,20 +7,18 @@ import org.log4s._
  */
 
 object App {
-  case class ClassWithPrivateFields(name: String)
 
   def main(args: Array[String]) {
     val test=new LoggingTest
     test.logPrint()
 
-    val log=getLogger
+    val loggerName = this.getClass.getName
+    val log=getLogger(loggerName)
     log.debug("debug log")
     log.info("info log")
     log.warn("warn log")
     log.error("error log")
 
-    val aClass = new ClassWithPrivateFields("sname")
-    println(aClass.name)
   }
 
 }

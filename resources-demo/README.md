@@ -1,0 +1,1 @@
+通过加载properties和xml两种文件进行测试。

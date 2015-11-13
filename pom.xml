@@ -37,6 +37,7 @@
         <module>nscala-time-demo</module>
         <module>json4s-demo</module>
         <module>sparkstreaming-demo</module>
+        <module>resources-demo</module>
     </modules>
 
     <build>

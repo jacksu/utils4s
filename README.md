@@ -17,5 +17,7 @@ utils4s包含各种scala通用、好玩的工具库使用demo，通过简单demo
 
 [json解析json4s](https://github.com/jacksu/utils4s/tree/master/json4s-demo)
 
+[resources下文件加载用例](https://github.com/jacksu/utils4s/tree/master/resources-demo)
+
 ## BigData库
 [spark streaming测试用例](https://github.com/jacksu/utils4s/tree/master/sparkstreaming-demo)

@@ -10,7 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.thinkjoy.scala4fun</groupId>
     <artifactId>log-demo</artifactId>
+    <packaging>pom</packaging>
     <inceptionYear>2008</inceptionYear>
+    <modules>
+        <module>../resources-demo</module>
+    </modules>
 
     <dependencies>
         <dependency>
