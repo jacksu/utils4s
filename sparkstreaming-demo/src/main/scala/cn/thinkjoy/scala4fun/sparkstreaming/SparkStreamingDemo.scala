@@ -55,7 +55,9 @@ object SparkStreamingDemo {
     }
     )
 
+    //开始计算
     ssc.start()
+    //等待计算结束
     ssc.awaitTermination()
   }
 
