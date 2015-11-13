@@ -1,2 +1,2 @@
 language: scala
-script: mvn -jvm-opts jvmopts.travis -Dslick.testkit-config=test-dbs/testkit.travis.conf +testAll
+script: sudo mvn -jvm-opts jvmopts.travis -Dslick.testkit-config=test-dbs/testkit.travis.conf +testAll
