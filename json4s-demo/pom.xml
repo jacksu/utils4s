@@ -3,7 +3,7 @@
     <parent>
         <artifactId>demo</artifactId>
         <groupId>cn.thinkjoy.scala4fun</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -18,8 +18,4 @@
             <version>3.3.0</version>
         </dependency>
     </dependencies>
-    <build>
-        <sourceDirectory>src/main/scala</sourceDirectory>
-        <testSourceDirectory>src/test/scala</testSourceDirectory>
-    </build>
 </project>

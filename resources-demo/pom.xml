@@ -6,11 +6,14 @@
         <version>1.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
-    <groupId>cn.thinkjoy.scala4fun.resources</groupId>
+    <groupId>cn.thinkjoy.scala4fun</groupId>
     <artifactId>resources-demo</artifactId>
     <inceptionYear>2008</inceptionYear>
-    <dependencies>
 
-    </dependencies>
+    <build>
+        <sourceDirectory>src/main/scala</sourceDirectory>
+        <testSourceDirectory>src/test/scala</testSourceDirectory>
+    </build>
 </project>
