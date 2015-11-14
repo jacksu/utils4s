@@ -20,7 +20,7 @@ utils4s包含各种scala通用、好玩的工具库使用demo，通过简单demo
 
 [resources下文件加载用例](https://github.com/jacksu/utils4s/tree/master/resources-demo)
 
-[文件操作](https://github.com/jacksu/utils4s/tree/master/resources-demo)（[better-files](https://github.com/pathikrit/better-files)）
+[文件操作](https://github.com/jacksu/utils4s/tree/master/file-demo)（[better-files](https://github.com/pathikrit/better-files)）
 
 [单位换算(squants)](https://github.com/garyKeorkunian/squants)
 
