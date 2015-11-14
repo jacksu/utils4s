@@ -6,21 +6,34 @@ utils4s包含各种scala通用、好玩的工具库使用demo，通过简单demo
 
 ## common库
 
-[日志log4s](https://github.com/Log4s/log4s)
+[日志操作](https://github.com/jacksu/utils4s/tree/master/log-demo)（[log4s](https://github.com/Log4s/log4s)）
 
-[单元测试scalatest](http://www.scalatest.org)
+[单元测试](https://github.com/jacksu/utils4s/tree/master/unittest-demo)（[scalatest](http://www.scalatest.org)）
 
-[scala学习用例scalaexercises](http://scala-exercises.47deg.com)
+[scala学习用例](https://github.com/jacksu/utils4s/tree/master/scala-demo)（[scalaexercises](http://scala-exercises.47deg.com)）
 
-[日期操作lama](http://www.lamma.io/doc/quick_start)（注:只支持日期操作，不支持时间操作）
+[日期操作](https://github.com/jacksu/utils4s/tree/master/lamma-demo)（[lama](http://www.lamma.io/doc/quick_start)）（注:只支持日期操作，不支持时间操作）
 
-[日期时间操作nscala-time](https://github.com/nscala-time/nscala-time)（注：没有每月多少天，每月最后一天，以及每年多少天）
+[日期时间操作](https://github.com/jacksu/utils4s/tree/master/nscala-demo)（[nscala-time](https://github.com/nscala-time/nscala-time)）（注：没有每月多少天，每月最后一天，以及每年多少天）
 
-[json解析json4s](https://github.com/jacksu/utils4s/tree/master/json4s-demo)
+[json解析](https://github.com/jacksu/utils4s/tree/master/json4s-demo)（[json4s](https://github.com/json4s/json4s)）
 
 [resources下文件加载用例](https://github.com/jacksu/utils4s/tree/master/resources-demo)
 
-[文件操作](https://github.com/pathikrit/better-files)
+[文件操作](https://github.com/jacksu/utils4s/tree/master/resources-demo)（[better-files](https://github.com/pathikrit/better-files)）
 
+[单位换算(squants)](https://github.com/garyKeorkunian/squants)
+
+[线性代数和矩阵计算(breeze)](https://github.com/scalanlp/breeze)
+
+[分布式并行实现库akka](http://akka.io)
+
+[Twitter工具库](https://github.com/twitter/util)
 ## BigData库
 [spark streaming测试用例](https://github.com/jacksu/utils4s/tree/master/sparkstreaming-demo)
+
+[基于spark streaming的聚合分析(Sparkta)](https://github.com/Stratio/Sparkta)
+
+[图处理(cassovary)](https://github.com/twitter/cassovary)
+
+[基于spark进行地理位置分析(gagellan)](https://github.com/harsha2010/magellan)
