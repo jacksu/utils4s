@@ -1,6 +1,7 @@
 package cn.thinkjoy.scala4fun.file
 
-import better.files.File
+import better.files._
+import java.io.{File=>JFile}
 
 /**
  * Hello world!
@@ -8,7 +9,8 @@ import better.files.File
  */
 object FileApp{
   def main(args: Array[String]) {
-    val file=File("test.txt").createIfNotExists()
-    file
+    //TODO
+    println("需要java8，需要继续跟")
   }
+
 }

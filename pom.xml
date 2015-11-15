@@ -10,8 +10,8 @@
     <version>1.0</version>
 
     <properties>
-        <scala.version>2.10.4</scala.version>
-        <soft.scala.version>2.10</soft.scala.version>
+        <scala.version>2.11.7</scala.version>
+        <soft.scala.version>2.11</soft.scala.version>
     </properties>
 
     <dependencies>
@@ -57,7 +57,7 @@
                 <configuration>
                     <scalaVersion>${scala.version}</scalaVersion>
                     <args>
-                        <arg>-target:jvm-1.5</arg>
+                        <arg>-target:jvm-1.7</arg>
                     </args>
                 </configuration>
             </plugin>
