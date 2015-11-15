@@ -4,6 +4,8 @@ utils4s包含各种scala通用、好玩的工具库使用demo，通过简单demo
 
 **同时欢迎大家贡献各种好玩的、经常使用的工具库。**
 
+[开源中国对应地址](http://git.oschina.net/jack.su/utils4s)
+
 ## common库
 
 [日志操作](https://github.com/jacksu/utils4s/tree/master/log-demo)（[log4s](https://github.com/Log4s/log4s)）
