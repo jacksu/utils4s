@@ -39,6 +39,7 @@
         <module>sparkstreaming-demo</module>
         <module>resources-demo</module>
         <module>file-demo</module>
+        <module>analysis-demo</module>
     </modules>
 
     <build>
