@@ -51,8 +51,10 @@ object analysisApp {
     println(vectorReduced)
     val vectorDouble = vector / space.Meters(5)    // returns vector reduced and converted to DoubleVector
     println(vectorDouble)
-    //val dotProduct = vector * vectorDouble  // returns the Dot Product of vector and vectorDouble
+    val dotProduct = vector * vectorDouble  // returns the Dot Product of vector and vectorDouble
+    println(dotProduct)
 
-    //val crossProduct = vector crossProduct vectorDouble  // currently only supported for 3-dimensional vectors
+    val crossProduct = vector crossProduct vectorDouble  // currently only supported for 3-dimensional vectors
+    println(crossProduct)
   }
 }

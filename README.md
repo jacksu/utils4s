@@ -24,7 +24,7 @@ utils4s包含各种scala通用、好玩的工具库使用demo，通过简单demo
 
 [文件操作](https://github.com/jacksu/utils4s/tree/master/file-demo)（[better-files](https://github.com/pathikrit/better-files)）
 
-[单位换算(squants)](https://github.com/garyKeorkunian/squants)
+[单位换算](https://github.com/jacksu/utils4s/tree/master/analysis-demo)（[squants](https://github.com/garyKeorkunian/squants)）
 
 [线性代数和矩阵计算(breeze)](https://github.com/scalanlp/breeze)
 
