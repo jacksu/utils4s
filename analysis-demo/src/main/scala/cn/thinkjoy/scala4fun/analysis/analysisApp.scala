@@ -1,9 +1,11 @@
 package cn.thinkjoy.scala4fun.analysis
 
-import squants.energy.{Watts, Power, Megawatts, Kilowatts}
+import squants.energy.Power
+import squants.energy._
 import squants.space._
 import squants._
 import squants.time._
+import squants.market._
 
 /**
  * Created by jacksu on 15/11/16.
@@ -56,5 +58,17 @@ object analysisApp {
 
     val crossProduct = vector crossProduct vectorDouble  // currently only supported for 3-dimensional vectors
     println(crossProduct)
+
+    //money
+    val tenBucks = USD(10)
+    println(tenBucks)
+    val tenyuan = CNY(10)
+    println(tenyuan)
+    val hongkong = HKD(10)
+    println(hongkong)
+
+    //price
+    val energyPrice = USD(102.20) / MegawattHours(1)
+    println(energyPrice)
   }
 }
