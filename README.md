@@ -10,7 +10,7 @@ utils4s包含各种scala通用、好玩的工具库使用demo，通过简单demo
 
 ## common库
 
-[日志操作](https://github.com/jacksu/utils4s/tree/master/log-demo)（[log4s](https://github.com/Log4s/log4s)）
+[日志操作](log-demo)（[log4s](https://github.com/Log4s/log4s)）
 
 [单元测试](https://github.com/jacksu/utils4s/tree/master/unittest-demo)（[scalatest](http://www.scalatest.org)）
 
