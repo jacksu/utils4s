@@ -1,4 +1,4 @@
-package cn.thinkjoy.scala4fun.json4s
+package cn.thinkjoy.utils4s.json4s
 
 import org.json4s._
 import org.json4s.jackson.JsonMethods._

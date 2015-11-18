@@ -1,4 +1,4 @@
-package cn.thinkjoy.scala4fun.resources
+package cn.thinkjoy.utils4s.resources
 
 import java.util.Properties
 

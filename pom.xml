@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.thinkjoy.scala4fun</groupId>
+    <groupId>cn.thinkjoy.utils4s</groupId>
     <artifactId>demo</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
@@ -40,6 +40,7 @@
         <module>resources-demo</module>
         <module>file-demo</module>
         <module>analysis-demo</module>
+        <module>twitter-util-demo</module>
     </modules>
 
     <build>

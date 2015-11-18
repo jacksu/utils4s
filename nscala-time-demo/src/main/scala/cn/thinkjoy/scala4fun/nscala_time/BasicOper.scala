@@ -1,4 +1,4 @@
-package cn.thinkjoy.scala4fun.nscala_time
+package cn.thinkjoy.utils4s.nscala_time
 
 import com.github.nscala_time.time._
 import com.github.nscala_time.time.Imports._

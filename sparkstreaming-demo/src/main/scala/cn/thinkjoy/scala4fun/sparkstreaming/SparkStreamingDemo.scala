@@ -1,4 +1,4 @@
-package cn.thinkjoy.scala4fun.sparkstreaming
+package cn.thinkjoy.utils4s.sparkstreaming
 
 import _root_.kafka.serializer.StringDecoder
 import org.apache.spark.storage.StorageLevel

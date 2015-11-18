@@ -7,19 +7,8 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>cn.thinkjoy.utils4s.file</groupId>
-    <artifactId>file-demo</artifactId>
+    <groupId>cn.thinkjoy.utils4s.twitter.util</groupId>
+    <artifactId>twitter-util-demo</artifactId>
     <inceptionYear>2008</inceptionYear>
-    <properties>
-        <better.file.version>2.13.0</better.file.version>
-    </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.github.pathikrit</groupId>
-            <artifactId>better-files_${soft.scala.version}</artifactId>
-            <version>${better.file.version}</version>
-            <scope>compile</scope>
-        </dependency>
-    </dependencies>
 </project>

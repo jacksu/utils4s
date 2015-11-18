@@ -1,4 +1,4 @@
-package cn.thinkjoy.scala4fun.analysis
+package cn.thinkjoy.utils4s.analysis
 
 import squants.energy.Power
 import squants.energy._

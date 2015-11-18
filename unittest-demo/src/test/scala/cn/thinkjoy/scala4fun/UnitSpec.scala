@@ -1,4 +1,4 @@
-package cn.thinkjoy.scala4fun
+package cn.thinkjoy.utils4s
 
 import org.scalatest.{Matchers, FlatSpec}
 

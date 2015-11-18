@@ -2,12 +2,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
         <artifactId>demo</artifactId>
-        <groupId>cn.thinkjoy.scala4fun</groupId>
+        <groupId>cn.thinkjoy.utils4s</groupId>
         <version>1.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>cn.thinkjoy.scala4fun.nscala-time</groupId>
+    <groupId>cn.thinkjoy.utils4s.nscala-time</groupId>
     <artifactId>nscala-time-demo</artifactId>
     <packaging>pom</packaging>
     <inceptionYear>2008</inceptionYear>

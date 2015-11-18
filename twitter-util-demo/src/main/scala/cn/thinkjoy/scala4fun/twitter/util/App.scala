@@ -1,4 +1,4 @@
-package cn.thinkjoy.utils4s
+package cn.thinkjoy.utils4s.twitter.util
 
 /**
  * Hello world!

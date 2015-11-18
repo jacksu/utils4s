@@ -1,4 +1,4 @@
-package cn.thinkjoy.scala4fun.file
+package cn.thinkjoy.utils4s.file
 
 import better.files._
 import java.io.{File=>JFile}

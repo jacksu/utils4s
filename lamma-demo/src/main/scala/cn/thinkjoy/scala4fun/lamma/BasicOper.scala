@@ -1,4 +1,4 @@
-package cn.thinkjoy.scala4fun.lamma
+package cn.thinkjoy.utils4s.lamma
 
 import io.lamma._
 
