@@ -10,5 +10,15 @@
     <groupId>cn.thinkjoy.utils4s.twitter.util</groupId>
     <artifactId>twitter-util-demo</artifactId>
     <inceptionYear>2008</inceptionYear>
+    <properties>
+        <twitter.util.version>6.29.0</twitter.util.version>
+    </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.twitter</groupId>
+            <artifactId>util-core_${soft.scala.version}</artifactId>
+            <version>${twitter.util.version}</version>
+        </dependency>
+    </dependencies>
 </project>
