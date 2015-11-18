@@ -9,6 +9,7 @@ object TimeApp {
     //duration1.inMillis
     println( duration1.inMilliseconds )
     println((duration2-duration1).inSeconds)
+    println((duration2-duration1).inMinutes)
 
   }
 

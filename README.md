@@ -32,7 +32,7 @@ QQ交流群 `432290475`
 
 [分布式并行实现库akka](http://akka.io)
 
-[Twitter工具库](https://github.com/twitter/util)
+[Twitter工具库](twitter-util-demo)（[twitter util](https://github.com/twitter/util)）
 
 ## BigData库
 [spark streaming测试用例](sparkstreaming-demo)
