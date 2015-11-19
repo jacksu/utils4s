@@ -1,6 +1,6 @@
 # utils4s[![Build Status](https://travis-ci.org/jacksu/utils4s.svg?branch=master)](https://travis-ci.org/jacksu/utils4s)[![Join the chat at https://gitter.im/jacksu/utils4s](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jacksu/utils4s?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-utils4s包含各种scala通用、好玩的工具库使用demo，通过简单demo，快速使用，提高工作效率。
+utils4s包含各种scala通用、好玩的工具库demo和使用文档，通过简单的代码演示和操作文档，各种库信手拈来。
 
 **同时欢迎大家贡献各种好玩的、经常使用的工具库。**
 
@@ -46,8 +46,7 @@ QQ交流群 `432290475`
 ## Pull Request流程
 1. 首先 fork 我的项目
 2. 把 fork 过去的项目也就是你的项目 clone 到你的本地
-3. 运行 git remote add jacksu git@github.com/jacksu/utils4s.git 端库
-把我的库添加为远
+3. 运行 git remote add jacksu git@github.com/jacksu/utils4s.git 把我的库添加为远端库
 4. 运行 git pull jacksu master 拉取并合并到本地
 5. coding
 6. commit后push到自己的库( git push origin master )
