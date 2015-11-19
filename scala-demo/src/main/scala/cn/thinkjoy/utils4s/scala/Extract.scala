@@ -1,4 +1,4 @@
-package cn.thinkjoy.utils4s
+package cn.thinkjoy.utils4s.scala
 
 /**
  * Created by jacksu on 15/10/25.

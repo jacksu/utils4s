@@ -14,7 +14,7 @@ QQ交流群 `432290475`
 
 [单元测试](unittest-demo)（[scalatest](http://www.scalatest.org)）
 
-[scala学习用例](scala-demo)（[scalaexercises](http://scala-exercises.47deg.com)）
+[scala学习用例](scala-demo)
 
 [日期操作](lamma-demo)（[lama](http://www.lamma.io/doc/quick_start)）（注:只支持日期操作，不支持时间操作）
 

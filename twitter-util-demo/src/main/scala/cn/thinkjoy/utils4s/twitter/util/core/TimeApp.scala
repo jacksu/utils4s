@@ -1,4 +1,4 @@
-package cn.thinkjoy.scala4fun.twitter.util.core
+package cn.thinkjoy.utils4s.twitter.util.core
 
 import com.twitter.conversions.time._
 

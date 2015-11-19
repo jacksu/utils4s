@@ -8,7 +8,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>cn.thinkjoy.utils4s</groupId>
+    <groupId>cn.thinkjoy.utils4s.log4s</groupId>
     <artifactId>log-demo</artifactId>
     <packaging>pom</packaging>
     <inceptionYear>2008</inceptionYear>
@@ -27,7 +27,5 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
-    <build>
-        <sourceDirectory>src/main/scala</sourceDirectory>
-    </build>
+
 </project>

@@ -1,4 +1,5 @@
-package cn.thinkjoy.utils4s
+package cn.thinkjoy.utils4s.log4s
+
 import org.log4s._
 
 /**

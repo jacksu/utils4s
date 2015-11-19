@@ -7,7 +7,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>cn.thinkjoy.utils4s</groupId>
+    <groupId>cn.thinkjoy.utils4s.unittest</groupId>
     <artifactId>unittest-demo</artifactId>
     <inceptionYear>2008</inceptionYear>
 
