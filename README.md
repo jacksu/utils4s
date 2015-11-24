@@ -8,13 +8,23 @@ utils4s包含各种scala通用、好玩的工具库demo和使用文档，通过�
 
 QQ交流群 `432290475`
 
+## scala语法学习
+
+说明：scala语法学习过程中，用例代码都放在scala-demo模块下。
+
+[scala理解的比较深](http://hongjiang.info/scala/)
+
+[scala99问题](http://aperiodic.net/phil/scala/s-99/)
+
+[scala初学者指南](https://windor.gitbooks.io/beginners-guide-to-scala/content/introduction.html)
+
+[scala学习用例](scala-demo)
+
 ## common库
 
 [日志操作](log-demo)（[log4s](https://github.com/Log4s/log4s)）
 
 [单元测试](unittest-demo)（[scalatest](http://www.scalatest.org)）
-
-[scala学习用例](scala-demo)
 
 [日期操作](lamma-demo)（[lama](http://www.lamma.io/doc/quick_start)）（注:只支持日期操作，不支持时间操作）
 
