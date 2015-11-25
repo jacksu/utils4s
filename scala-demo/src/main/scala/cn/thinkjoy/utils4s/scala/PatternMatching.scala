@@ -36,7 +36,11 @@ object PatternMatching {
     case _ => false
   }
 
+  //模式匿名函数
+  val transformFn:(String, Int)=>String = { case (w, _) => w }
+
   def main(args: Array[String]) {
+
     println(matchTest(3))
 
 
@@ -64,5 +68,6 @@ object PatternMatching {
     println(expression( ("chair", "jack")))
 
     println(patternEquals(3,3))
+
   }
 }
