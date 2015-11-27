@@ -18,7 +18,7 @@ QQ交流群 `432290475`
 
 [scala99问题](http://aperiodic.net/phil/scala/s-99/)
 
-[scala初学者指南](https://windor.gitbooks.io/beginners-guide-to-scala/content/introduction.html)
+[scala初学者指南](https://windor.gitbooks.io/beginners-guide-to-scala/content/introduction.html)(这可不是初学者可以理解的欧，还是写过一些程序后再看)
 
 [scala学习用例](scala-demo)
 
