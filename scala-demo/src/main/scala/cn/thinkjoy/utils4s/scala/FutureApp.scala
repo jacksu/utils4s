@@ -102,7 +102,7 @@ object FutureApp {
     }
     //Await.result(f,1 milli)
 
-    //顺序,并且为了测试try
+    //顺序,并且为了测试try,主线程等待结果的完成
     val result=Try(Await.result(prepareCappuccinoSequentially(), 1 second)) recover {
       case e:TimeoutException => "timeout error"
     }
