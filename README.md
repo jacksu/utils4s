@@ -20,6 +20,8 @@ QQ交流群 `432290475`
 
 [scala初学者指南](https://windor.gitbooks.io/beginners-guide-to-scala/content/introduction.html)(这可不是初学者可以理解的欧，还是写过一些程序后再看)
 
+[scala初学者指南英文版](http://danielwestheide.com/scala/neophytes.html)
+
 [scala学习用例](scala-demo)
 
 ## common库
