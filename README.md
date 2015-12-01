@@ -1,4 +1,11 @@
-# utils4s[![Build Status](https://travis-ci.org/jacksu/utils4s.svg?branch=master)](https://travis-ci.org/jacksu/utils4s)[![Join the chat at https://gitter.im/jacksu/utils4s](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jacksu/utils4s?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+<h1 id="id1">utils4s</h1>
+
+[![Build Status](https://travis-ci.org/jacksu/utils4s.svg?branch=master)](https://travis-ci.org/jacksu/utils4s)[![Join the chat at https://gitter.im/jacksu/utils4s](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jacksu/utils4s?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+*   [utils4s](#id1)
+    *   [scala语法学习](#id2)
+    *   [common库](#id21)
+    *   [BigData库](#id22)
 
 utils4s包含各种scala通用、好玩的工具库demo和使用文档，通过简单的代码演示和操作文档，各种库信手拈来。
 
@@ -8,7 +15,7 @@ utils4s包含各种scala通用、好玩的工具库demo和使用文档，通过�
 
 QQ交流群 `432290475`
 
-## scala语法学习
+<h2 id="id2">scala语法学习</h2>
 
 说明：scala语法学习过程中，用例代码都放在scala-demo模块下。
 
@@ -26,7 +33,7 @@ QQ交流群 `432290475`
 
 [scala学习用例](scala-demo)
 
-## common库
+<h2 id="id21">common库</h2>
 
 [日志操作](log-demo)（[log4s](https://github.com/Log4s/log4s)）
 
@@ -50,7 +57,8 @@ QQ交流群 `432290475`
 
 [Twitter工具库](twitter-util-demo)（[twitter util](https://github.com/twitter/util)）
 
-## BigData库
+<h2 id="id22">BigData库</h2>
+
 [spark streaming测试用例](sparkstreaming-demo)
 
 [基于spark streaming的聚合分析(Sparkta)](https://github.com/Stratio/Sparkta)
