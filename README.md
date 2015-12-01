@@ -6,6 +6,7 @@
     *   [scala语法学习](#id2)
     *   [common库](#id21)
     *   [BigData库](#id22)
+    *   [贡献代码步骤](#id23)
 
 utils4s包含各种scala通用、好玩的工具库demo和使用文档，通过简单的代码演示和操作文档，各种库信手拈来。
 
@@ -67,7 +68,7 @@ QQ交流群 `432290475`
 
 [基于spark进行地理位置分析(gagellan)](https://github.com/harsha2010/magellan)
 
-## Pull Request流程
+<h2 id="id23">贡献代码步骤</h2>
 1. 首先 fork 我的项目
 2. 把 fork 过去的项目也就是你的项目 clone 到你的本地
 3. 运行 git remote add jacksu git@github.com/jacksu/utils4s.git 把我的库添加为远端库
