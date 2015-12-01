@@ -12,6 +12,7 @@ object P02 {
 
   def main(args: Array[String]) {
     println(penultimate(List(1, 1, 2, 3, 5, 8)))
+    println(penultimate(List(1)))
   }
 
 }
