@@ -40,7 +40,7 @@ QQ交流群 `432290475`
 
 [单元测试](unittest-demo)（[scalatest](http://www.scalatest.org)）
 
-[日期操作](lamma-demo)（[lama](http://www.lamma.io/doc/quick_start)）（注:只支持日期操作，不支持时间操作）
+[日期操作](lamma-time-demo)（[lama](http://www.lamma.io/doc/quick_start)）（注:只支持日期操作，不支持时间操作）
 
 [日期时间操作](nscala-demo)（[nscala-time](https://github.com/nscala-time/nscala-time)）（注：没有每月多少天，每月最后一天，以及每年多少天）
 
