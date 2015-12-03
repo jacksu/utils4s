@@ -28,24 +28,103 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h1>
+          <h1 id="id1">
 <a id="utils4s" class="anchor" href="#utils4s" aria-hidden="true"><span class="octicon octicon-link"></span></a>utils4s</h1>
 
-<p>包含scala各种通用、好玩库的demo，方便在项目中使用，同时欢迎大家贡献各种好玩的库。</p>
+<p><a href="https://travis-ci.org/jacksu/utils4s"><img src="https://travis-ci.org/jacksu/utils4s.svg?branch=master" alt="Build Status"></a><a href="https://gitter.im/jacksu/utils4s?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/jacksu/utils4s"></a></p>
 
-<p>现已包含：</p>
+<ul>
+<li>  <a href="#id1">utils4s</a>
 
-<p><a href="https://github.com/Log4s/log4s">日志log4s</a></p>
+<ul>
+<li>  <a href="#id2">scala语法学习</a>
+</li>
+<li>  <a href="#id21">common库</a>
+</li>
+<li>  <a href="#id22">BigData库</a>
+</li>
+<li>  <a href="#id23">贡献代码步骤</a>
+</li>
+</ul>
+</li>
+</ul>
 
-<p><a href="http://www.scalatest.org">单元测试scalatest</a></p>
+<p>utils4s包含各种scala通用、好玩的工具库demo和使用文档，通过简单的代码演示和操作文档，各种库信手拈来。</p>
 
-<p><a href="http://scala-exercises.47deg.com">scala学习用例scalaexercises</a></p>
+<p><strong>同时欢迎大家贡献各种好玩的、经常使用的工具库。</strong></p>
 
-<p><a href="http://www.lamma.io/doc/quick_start">日期操作lama</a>（注:只支持日期操作，不支持时间操作）</p>
+<p><a href="http://git.oschina.net/jack.su/utils4s">开源中国地址</a></p>
 
-<p><a href="https://github.com/nscala-time/nscala-time">日期时间操作nscala-time</a>（注：没有每月多少天，每月最后一天，以及每年多少天）</p>
+<p>QQ交流群 <code>432290475</code></p>
 
-<p><a href="https://github.com/json4s/json4s">json解析json4s</a></p>
+<h2 id="id2">
+<a id="scala语法学习" class="anchor" href="#scala%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0" aria-hidden="true"><span class="octicon octicon-link"></span></a>scala语法学习</h2>
+
+<p>说明：scala语法学习过程中，用例代码都放在scala-demo模块下。</p>
+
+<p><a href="http://vdisk.weibo.com/s/BP8uNBebkvpOe">快学scala电子书</a></p>
+
+<p><a href="http://www.hubwiz.com/class/5449c691e564e50960f1b7a9">一个不错的spark学习互动课程</a></p>
+
+<p><a href="http://hongjiang.info/scala/">scala理解的比较深</a></p>
+
+<p><a href="http://aperiodic.net/phil/scala/s-99/">scala99问题</a></p>
+
+<p><a href="https://windor.gitbooks.io/beginners-guide-to-scala/content/introduction.html">scala初学者指南</a>(这可不是初学者可以理解的欧，还是写过一些程序后再看)</p>
+
+<p><a href="http://danielwestheide.com/scala/neophytes.html">scala初学者指南英文版</a></p>
+
+<p><a href="scala-demo">scala学习用例</a></p>
+
+<h2 id="id21">
+<a id="common库" class="anchor" href="#common%E5%BA%93" aria-hidden="true"><span class="octicon octicon-link"></span></a>common库</h2>
+
+<p><a href="log-demo">日志操作</a>（<a href="https://github.com/Log4s/log4s">log4s</a>）</p>
+
+<p><a href="unittest-demo">单元测试</a>（<a href="http://www.scalatest.org">scalatest</a>）</p>
+
+<p><a href="lamma-demo">日期操作</a>（<a href="http://www.lamma.io/doc/quick_start">lama</a>）（注:只支持日期操作，不支持时间操作）</p>
+
+<p><a href="nscala-demo">日期时间操作</a>（<a href="https://github.com/nscala-time/nscala-time">nscala-time</a>）（注：没有每月多少天，每月最后一天，以及每年多少天）</p>
+
+<p><a href="json4s-demo">json解析</a>（<a href="https://github.com/json4s/json4s">json4s</a>）</p>
+
+<p><a href="resources-demo">resources下文件加载用例</a></p>
+
+<p><a href="file-demo">文件操作</a>（<a href="https://github.com/pathikrit/better-files">better-files</a>）</p>
+
+<p><a href="analysis-demo">单位换算</a>（<a href="https://github.com/garyKeorkunian/squants">squants</a>）</p>
+
+<p><a href="https://github.com/scalanlp/breeze">线性代数和矩阵计算(breeze)</a></p>
+
+<p><a href="http://akka.io">分布式并行实现库akka</a></p>
+
+<p><a href="twitter-util-demo">Twitter工具库</a>（<a href="https://github.com/twitter/util">twitter util</a>）</p>
+
+<h2 id="id22">
+<a id="bigdata库" class="anchor" href="#bigdata%E5%BA%93" aria-hidden="true"><span class="octicon octicon-link"></span></a>BigData库</h2>
+
+<p><a href="sparkstreaming-demo">spark streaming测试用例</a></p>
+
+<p><a href="https://github.com/Stratio/Sparkta">基于spark streaming的聚合分析(Sparkta)</a></p>
+
+<p><a href="https://github.com/twitter/cassovary">图处理(cassovary)</a></p>
+
+<p><a href="https://github.com/harsha2010/magellan">基于spark进行地理位置分析(gagellan)</a></p>
+
+<h2 id="id23">
+<a id="贡献代码步骤" class="anchor" href="#%E8%B4%A1%E7%8C%AE%E4%BB%A3%E7%A0%81%E6%AD%A5%E9%AA%A4" aria-hidden="true"><span class="octicon octicon-link"></span></a>贡献代码步骤</h2>
+
+<ol>
+<li>首先 fork 我的项目</li>
+<li>把 fork 过去的项目也就是你的项目 clone 到你的本地</li>
+<li>运行 git remote add jacksu <a href="mailto:git@github.com">git@github.com</a>/jacksu/utils4s.git 把我的库添加为远端库</li>
+<li>运行 git pull jacksu master 拉取并合并到本地</li>
+<li>coding</li>
+<li>commit后push到自己的库( git push origin master )</li>
+<li>登陆Github在你首页可以看到一个 pull request 按钮,点击它,填写一些说明信息,然后提交即可。
+1~3是初始化操作,执行一次即可。在coding前必须执行第4步同步我的库(这样避免冲突),然后执行5~7既可。</li>
+</ol>
         </section>
 
         <aside id="sidebar">
