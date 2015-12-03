@@ -11,7 +11,7 @@ object TimeApp {
     println( duration1.inMilliseconds )
     println((duration2-duration1).inSeconds)
     println((duration2-duration1).inMinutes)
-    println(Time.now.format("yyyy:mm:dd"))
+    println(Time.now.format("yyyy-MM-dd"))
     println(Time.epoch)
     //just for test now
     val elapsed: () => Duration = Stopwatch.start()
