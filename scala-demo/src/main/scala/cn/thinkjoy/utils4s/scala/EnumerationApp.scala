@@ -1,7 +1,7 @@
 package cn.thinkjoy.utils4s.scala
 
 /**
- * Created by jack on 15-12-4.
+ * Created by jacksu on 15-12-4.
  */
 object EnumerationApp {
   object TrafficLightColor extends Enumeration{
