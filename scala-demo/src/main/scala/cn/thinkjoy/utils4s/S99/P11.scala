@@ -7,11 +7,11 @@ object P11 {
   def encodeModified[A](xs: List[A]): List[Any] = xs match {
     case Nil => Nil
     case head :: tail => {
-      if (tail.takeWhile(_ == head).length != 0)
+      if (tail.takeWhile(_ == head).isEmpty)
+        head :: encodeModified(tail.dropWhile(_ == head))
+      else
         (tail.takeWhile(_ == head).length + 1, head) ::
           encodeModified(tail.dropWhile(_ == head))
-      else
-        head :: encodeModified(tail.dropWhile(_ == head))
     }
   }
 
