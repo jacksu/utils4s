@@ -41,6 +41,7 @@
         <module>file-demo</module>
         <module>analysis-demo</module>
         <module>twitter-util-demo</module>
+        <module>spark-dataframe-demo</module>
     </modules>
 
     <build>
