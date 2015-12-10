@@ -68,6 +68,7 @@ QQ交流群 `432290475`
 
 [基于spark进行地理位置分析(gagellan)](https://github.com/harsha2010/magellan)
 
+[ES 非阻塞scala客户端](https://github.com/sksamuel/elastic4s)
 <h2 id="id23">贡献代码步骤</h2>
 1. 首先 fork 我的项目
 2. 把 fork 过去的项目也就是你的项目 clone 到你的本地
