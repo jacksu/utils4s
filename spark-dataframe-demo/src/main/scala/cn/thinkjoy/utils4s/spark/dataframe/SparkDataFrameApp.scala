@@ -13,7 +13,7 @@ object SparkDataFrameApp  {
 
     @transient
     val hiveContext = new HiveContext(sc)
-    val file=hiveContext.read.load("hdfs://vm10-136-3-214.ksc.com:8020/tmp/b.txt")
+    val file=sc.textFile("b.txt")
     import hiveContext.implicits._
     file.flatMap(line=>line.toString().split("\t")).
       toDF("age","name").show()
