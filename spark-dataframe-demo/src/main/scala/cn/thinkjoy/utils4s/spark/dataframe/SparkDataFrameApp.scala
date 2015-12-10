@@ -22,7 +22,7 @@ object SparkDataFrameApp {
   def main(args: Array[String]) {
 
     val path = "spark-dataframe-demo/src/main/resources/b.txt"
-    createTable(path,"people","age name",f)
+    createTable(path, "people", "age name", f)
     hiveContext.sql("SELECT age,name FROM people").show()
   }
 
@@ -31,8 +31,8 @@ object SparkDataFrameApp {
    * @param line
    * @return
    */
-  def f(line:RDD[String]):RDD[Row] ={
-    line.map(_.split(" ")).map(array=>Row(array(0),array(1)))
+  def f(line: RDD[String]): RDD[Row] = {
+    line.map(_.split(" ")).map(array => Row(array(0), array(1)))
   }
 
   /**
@@ -42,10 +42,12 @@ object SparkDataFrameApp {
    * @param schemaString 表的schema
    * @param f            内容转化函数
    */
-  def createTable(path: String,
-                  table: String,
-                  schemaString: String,
-                  f: RDD[String] => RDD[Row]): Unit = {
+  def createTable(
+    path: String,
+    table: String,
+    schemaString: String,
+    f: RDD[String] => RDD[Row]): Unit = {
+
     val people = sc.textFile(path)
     val schema =
       StructType(
