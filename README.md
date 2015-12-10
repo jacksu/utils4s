@@ -6,6 +6,8 @@
     *   [scala语法学习](#id2)
     *   [common库](#id21)
     *   [BigData库](#id22)
+        *   [Spark](#id221)
+        *   [ES](#id222)
     *   [贡献代码步骤](#id23)
 
 utils4s包含各种scala通用、好玩的工具库demo和使用文档，通过简单的代码演示和操作文档，各种库信手拈来。
@@ -60,13 +62,19 @@ QQ交流群 `432290475`
 
 <h2 id="id22">BigData库</h2>
 
+<h3 id="id221">Spark</h3>
+
 [spark streaming测试用例](sparkstreaming-demo)
+
+[spark DataFrame测试用例](spark-dataframe-demo)
 
 [基于spark streaming的聚合分析(Sparkta)](https://github.com/Stratio/Sparkta)
 
 [图处理(cassovary)](https://github.com/twitter/cassovary)
 
 [基于spark进行地理位置分析(gagellan)](https://github.com/harsha2010/magellan)
+
+<h3 id="id222">ES</h3>
 
 [ES 非阻塞scala客户端](https://github.com/sksamuel/elastic4s)
 <h2 id="id23">贡献代码步骤</h2>
