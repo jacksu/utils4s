@@ -24,6 +24,8 @@ object SparkDataFrameApp {
     val path = "spark-dataframe-demo/src/main/resources/b.txt"
     createTable(path, "people", "age name", f)
     hiveContext.sql("SELECT age,name FROM people").show()
+    hiveContext.udf.register("getSourceType",getSourceType(_:String))
+    hiveContext.sql("SELECT age,getSourceType(name) FROM people").show()
   }
 
   /**
@@ -62,5 +64,24 @@ object SparkDataFrameApp {
 
     // Register the SchemaRDD as a table.
     peopleSchemaRDD.registerTempTable(table)
+  }
+
+  /**
+   * UDF验证
+   * @param remark
+   * @return
+   */
+  def getSourceType(remark: String): Int = {
+    val typePattern = "yzt_web|iphone|IPHONE|ANDROID".r
+    val logType = typePattern.findFirstIn(remark).getOrElse("")
+
+
+    logType match {
+      case "yzt_web" => 0
+      case "ANDROID" => 1
+      case "IPHONE" => 2
+      case "iphone" => 2
+      case _ => 404
+    }
   }
 }
