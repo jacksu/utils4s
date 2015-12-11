@@ -63,7 +63,11 @@ QQ交流群 `432290475`
 <h3 id="id221">Spark</h3>
 [一个不错的spark学习互动课程](http://www.hubwiz.com/class/5449c691e564e50960f1b7a9)
 
+[spark 设计与实现](http://spark-internals.books.yourtion.com/index.html)
+
 [spark streaming测试用例](sparkstreaming-demo)
+
+[spark streaming源码解析](https://github.com/proflin/CoolplaySpark)
 
 [spark DataFrame测试用例](spark-dataframe-demo)
 

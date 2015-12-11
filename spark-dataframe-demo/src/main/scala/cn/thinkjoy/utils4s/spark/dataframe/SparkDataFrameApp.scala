@@ -20,12 +20,20 @@ object SparkDataFrameApp {
   val hiveContext = new HiveContext(sc)
 
   def main(args: Array[String]) {
-
+    //通用创建表测试
     val path = "spark-dataframe-demo/src/main/resources/b.txt"
     createTable(path, "people", "age name", f)
     hiveContext.sql("SELECT age,name FROM people").show()
+
+    //UDF测试
     hiveContext.udf.register("getSourceType",getSourceType(_:String))
     hiveContext.sql("SELECT age,getSourceType(name) FROM people").show()
+
+    //json测试
+    val test=hiveContext.read.json("spark-dataframe-demo/src/main/resources/a.json")
+    test.printSchema()
+    test.registerTempTable("test")
+    hiveContext.sql("SELECT name.first FROM test").show()
   }
 
   /**
