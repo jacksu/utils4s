@@ -4,12 +4,11 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.Row
 import org.apache.spark.sql.hive.HiveContext
 import org.apache.spark.sql.types._
-import org.apache.spark.{SparkContext, SparkConf}
+import org.apache.spark.{ SparkContext, SparkConf }
 
 /**
  * Created by jack on 15-12-10.
  */
-
 
 object SparkDataFrameApp {
   @transient
@@ -26,11 +25,11 @@ object SparkDataFrameApp {
     hiveContext.sql("SELECT age,name FROM people").show()
 
     //UDF测试
-    hiveContext.udf.register("getSourceType",getSourceType(_:String))
+    hiveContext.udf.register("getSourceType", getSourceType(_: String))
     hiveContext.sql("SELECT age,getSourceType(name) FROM people").show()
 
     //json测试
-    val test=hiveContext.read.json("spark-dataframe-demo/src/main/resources/a.json")
+    val test = hiveContext.read.json("spark-dataframe-demo/src/main/resources/a.json")
     test.printSchema()
     test.registerTempTable("test")
     hiveContext.sql("SELECT name.first FROM test").show()
@@ -42,7 +41,7 @@ object SparkDataFrameApp {
    * @return
    */
   def f(line: RDD[String]): RDD[Row] = {
-    line.map(_.split(" ")).map(array => Row(array(0), array(1)))
+    line.map(_.split(" ")).map(array ⇒ Row(array(0), array(1)))
   }
 
   /**
@@ -56,12 +55,12 @@ object SparkDataFrameApp {
     path: String,
     table: String,
     schemaString: String,
-    f: RDD[String] => RDD[Row]): Unit = {
+    f: RDD[String] ⇒ RDD[Row]): Unit = {
 
     val people = sc.textFile(path)
     val schema =
       StructType(
-        schemaString.split(" ").map(fieldName => StructField(fieldName, StringType, true)))
+        schemaString.split(" ").map(fieldName ⇒ StructField(fieldName, StringType, true)))
 
     // Convert records of the RDD (people) to Rows.
     //val rowRDD = people.map(_.split(",")).map(p => Row(p(0), p(1).trim))
@@ -83,13 +82,12 @@ object SparkDataFrameApp {
     val typePattern = "yzt_web|iphone|IPHONE|ANDROID".r
     val logType = typePattern.findFirstIn(remark).getOrElse("")
 
-
     logType match {
-      case "yzt_web" => 0
-      case "ANDROID" => 1
-      case "IPHONE" => 2
-      case "iphone" => 2
-      case _ => 404
+      case "yzt_web" ⇒ 0
+      case "ANDROID" ⇒ 1
+      case "IPHONE" ⇒ 2
+      case "iphone" ⇒ 2
+      case _ ⇒ 404
     }
   }
 }
