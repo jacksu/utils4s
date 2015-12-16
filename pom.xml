@@ -42,6 +42,7 @@
         <module>analysis-demo</module>
         <module>twitter-util-demo</module>
         <module>spark-dataframe-demo</module>
+        <module>spark-timeseries-demo</module>
     </modules>
 
     <build>
