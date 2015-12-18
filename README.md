@@ -83,7 +83,7 @@ QQ交流群 `432290475`
 <h2 id="id23">贡献代码步骤</h2>
 1. 首先 fork 我的项目
 2. 把 fork 过去的项目也就是你的项目 clone 到你的本地
-3. 运行 git remote add jacksu git@github.com/jacksu/utils4s.git 把我的库添加为远端库
+3. 运行 git remote add jacksu git@github.com:jacksu/utils4s.git 把我的库添加为远端库
 4. 运行 git pull jacksu master 拉取并合并到本地
 5. coding
 6. commit后push到自己的库( git push origin master )
