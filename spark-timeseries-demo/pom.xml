@@ -11,7 +11,7 @@
     <artifactId>spark-timeseries</artifactId>
     <inceptionYear>2008</inceptionYear>
     <properties>
-        
+
         <scala.version>2.10.4</scala.version>
         <spark.version>1.4.0</spark.version>
         <soft.scala.version>2.10</soft.scala.version>

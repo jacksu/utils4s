@@ -9,6 +9,7 @@
         *   [Spark](#id221)
         *   [ES](#id222)
     *   [贡献代码步骤](#id23)
+    *   [贡献者](#id24)
 
 utils4s包含各种scala通用、好玩的工具库demo和使用文档，通过简单的代码演示和操作文档，各种库信手拈来。
 
@@ -89,3 +90,6 @@ QQ交流群 `432290475`
 6. commit后push到自己的库( git push origin master )
 7. 登陆Github在你首页可以看到一个 pull request 按钮,点击它,填写一些说明信息,然后提交即可。
 1~3是初始化操作,执行一次即可。在coding前必须执行第4步同步我的库(这样避免冲突),然后执行5~7既可。
+
+<h2 id="id24">贡献者</h2>
+[jjcipher](https://github.com/jjcipher)
