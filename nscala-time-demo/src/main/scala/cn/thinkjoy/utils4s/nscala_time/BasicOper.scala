@@ -23,6 +23,7 @@ object BasicOper {
     println(DateTime.parse("2014-07-7") < DateTime.parse("2014-07-8"))
     //println((DateTime.parse("2014-07-9").toLocalDate - DateTime.parse("2014-07-8").toLocalDate))
 
+
     // Find the time difference between two dates
     val newYear2016 = new DateTime withDate(2016, 1, 1)
     val daysToYear2016 = (DateTime.now to newYear2016 toPeriod PeriodType.days).getDays // 到2016年一月ㄧ日還有幾天
