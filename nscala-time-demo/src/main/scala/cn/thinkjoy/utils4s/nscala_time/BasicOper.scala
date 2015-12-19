@@ -2,6 +2,7 @@ package cn.thinkjoy.utils4s.nscala_time
 
 import com.github.nscala_time.time._
 import com.github.nscala_time.time.Imports._
+import org.joda.time.PeriodType
 
 /**
  * Hello world!
@@ -21,6 +22,10 @@ object BasicOper {
     //============== compare two date ===========
     println(DateTime.parse("2014-07-7") < DateTime.parse("2014-07-8"))
     //println((DateTime.parse("2014-07-9").toLocalDate - DateTime.parse("2014-07-8").toLocalDate))
+
+    // Find the time difference between two dates
+    val newYear2016 = new DateTime withDate(2016, 1, 1)
+    val daysToYear2016 = (DateTime.now to newYear2016 toPeriod PeriodType.days).getDays // 到2016年一月ㄧ日還有幾天
 
     // ========== manipulate dates =============
     println(DateTime.parse("2014-07-7") + 1.days)
@@ -45,9 +50,11 @@ object BasicOper {
     println((DateTime.now()-1.days).getDayOfMonth)
     println(DateTime.now().getMonthOfYear)
     println(DateTime.now().plusMonths(1))
+    println(DateTime.now().dayOfMonth().getMaximumValue()) // 這個月有多少天
 
     // ========== year related ops =============
     println((DateTime.now()-1.days).getDayOfYear)
+    println(DateTime.now().dayOfYear().getMaximumValue()) // 今年有多少天
 
   }
 }
