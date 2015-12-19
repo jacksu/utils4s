@@ -11,9 +11,9 @@ import org.joda.time._
 import com.cloudera.sparkts.models.Autoregression
 
 /**
- * Hello world!
- *
+ * jacksu
  */
+
 object TimeSeriesApp {
 
   /**
@@ -57,12 +57,12 @@ object TimeSeriesApp {
     tickerTsrdd.cache()
 
     // Count the number of series (number of symbols)
-    println(tickerTsrdd.count())
+    println("======"+tickerTsrdd.count()+"=======")
 
     // Impute missing values using linear interpolation
     val filled = tickerTsrdd.fill("linear")
 
-    // Compute return rates
+    // Compute return rates 计算回报率
     val returnRates = filled.returnRates()
 
     // Compute Durbin-Watson stats for each series
