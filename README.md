@@ -55,7 +55,7 @@ QQ交流群 `432290475`
 
 [单位换算](analysis-demo)（[squants](https://github.com/garyKeorkunian/squants)）
 
-[线性代数和矩阵计算(breeze)](https://github.com/scalanlp/breeze)
+[线性代数和向量计算](breeze-demo)([breeze](https://github.com/scalanlp/breeze))
 
 [分布式并行实现库akka](http://akka.io)
 
