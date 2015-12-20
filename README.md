@@ -19,6 +19,8 @@ utils4s包含各种scala通用、好玩的工具库demo和使用文档，通过�
 
 QQ交流群 `432290475`
 
+微博：[**jacksu_**](http://weibo.com/jack4s)
+
 <h2 id="id2">scala语法学习</h2>
 
 说明：scala语法学习过程中，用例代码都放在scala-demo模块下。
