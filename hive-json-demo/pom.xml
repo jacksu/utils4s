@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>demo</artifactId>
+        <groupId>cn.thinkjoy.utils4s</groupId>
+        <version>1.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cn.thinkjoy.utils4s.hive.json</groupId>
+    <artifactId>hive-json-demo</artifactId>
+    <inceptionYear>2008</inceptionYear>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>2.6.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hive</groupId>
+            <artifactId>hive-serde</artifactId>
+            <version>1.1.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+</project>

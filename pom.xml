@@ -44,6 +44,7 @@
         <module>spark-dataframe-demo</module>
         <module>spark-timeseries-demo</module>
         <module>breeze-demo</module>
+        <module>hive-json-demo</module>
     </modules>
 
     <build>
