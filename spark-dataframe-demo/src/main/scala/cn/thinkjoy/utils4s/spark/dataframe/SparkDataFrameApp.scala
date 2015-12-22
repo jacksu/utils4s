@@ -23,6 +23,7 @@ object SparkDataFrameApp {
     val path = "spark-dataframe-demo/src/main/resources/b.txt"
     createTable(path, "people", "age name", f)
     hiveContext.sql("SELECT age,name FROM people").show()
+    sc.textFile("")
 
     //UDF测试
     hiveContext.udf.register("getSourceType", getSourceType(_: String))
@@ -68,6 +69,21 @@ object SparkDataFrameApp {
 
     // Apply the schema to the RDD.
     val peopleSchemaRDD = hiveContext.createDataFrame(rowRDD, schema)
+
+    // Register the SchemaRDD as a table.
+    peopleSchemaRDD.registerTempTable(table)
+  }
+
+  def createTableFromJson(
+    path: String,
+    table: String,
+    schemaString: String): Unit = {
+
+    val schema =
+      StructType(
+        schemaString.split(" ").map(fieldName ⇒ StructField(fieldName, StringType, true)))
+
+    val peopleSchemaRDD = hiveContext.read.schema(schema).json(path)
 
     // Register the SchemaRDD as a table.
     peopleSchemaRDD.registerTempTable(table)
