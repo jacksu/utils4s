@@ -42,7 +42,7 @@
         <module>analysis-demo</module>
         <module>twitter-util-demo</module>
         <module>spark-dataframe-demo</module>
-        <module>spark-timeseries-demo</module>
+        <!---<module>spark-timeseries-demo</module>-->
         <module>breeze-demo</module>
         <module>hive-json-demo</module>
     </modules>
