@@ -45,6 +45,7 @@
         <!---<module>spark-timeseries-demo</module>-->
         <module>breeze-demo</module>
         <module>hive-json-demo</module>
+        <module>akka-demo</module>
     </modules>
 
     <build>
