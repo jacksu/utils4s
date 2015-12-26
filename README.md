@@ -7,6 +7,11 @@
     *   [common库](#id21)
     *   [BigData库](#id22)
         *   [Spark](#id221)
+            *   [Spark core](#id2211)
+            *   [Spark Streaming](#id2212)
+            *   [Spark DataFrame](#id2213)
+            *   [Spark 机器学习](#id2213)
+            *   [Spark 其它](#id2214)
         *   [ES](#id222)
     *   [贡献代码步骤](#id23)
     *   [贡献者](#id24)
@@ -57,24 +62,36 @@ QQ交流群 `432290475`
 
 [线性代数和向量计算](breeze-demo)([breeze](https://github.com/scalanlp/breeze))
 
-[分布式并行实现库akka](http://akka.io)
+[分布式并行实现库akka](akka-demo)([akka](http://akka.io))
 
 [Twitter工具库](twitter-util-demo)（[twitter util](https://github.com/twitter/util)）
 
 <h2 id="id22">BigData库</h2>
 
 <h3 id="id221">Spark</h3>
+
+<h4 id="id2211">Spark core</h4>
 [一个不错的spark学习互动课程](http://www.hubwiz.com/class/5449c691e564e50960f1b7a9)
 
 [spark 设计与实现](http://spark-internals.books.yourtion.com/index.html)
+
+<h4 id="id2212">Spark Streaming</h4>
 
 [spark streaming测试用例](sparkstreaming-demo)
 
 [spark streaming源码解析](https://github.com/proflin/CoolplaySpark)
 
+[基于spark streaming的聚合分析(Sparkta)](https://github.com/Stratio/Sparkta)
+
+<h4 id="id2213">Spark DataFrame</h4>
+
 [spark DataFrame测试用例](spark-dataframe-demo)
 
-[基于spark streaming的聚合分析(Sparkta)](https://github.com/Stratio/Sparkta)
+<h4 id="id2213">Spark 机器学习</h4>
+
+[spark ](spark-timeseries-demo)
+
+<h4 id="id2214">Spark 其它</h4>
 
 [图处理(cassovary)](https://github.com/twitter/cassovary)
 
