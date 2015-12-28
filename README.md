@@ -89,7 +89,7 @@ QQ交流群 `432290475`
 
 <h4 id="id2213">Spark 机器学习</h4>
 
-[spark ](spark-timeseries-demo)
+[spark TS](spark-timeseries-demo)
 
 <h4 id="id2214">Spark 其它</h4>
 
