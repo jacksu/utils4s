@@ -93,6 +93,8 @@ QQ交流群 `432290475`
 
 <h4 id="id2214">Spark 其它</h4>
 
+[spark学习知识总结](spark-knowledge)
+
 [图处理(cassovary)](https://github.com/twitter/cassovary)
 
 [基于spark进行地理位置分析(gagellan)](https://github.com/harsha2010/magellan)
