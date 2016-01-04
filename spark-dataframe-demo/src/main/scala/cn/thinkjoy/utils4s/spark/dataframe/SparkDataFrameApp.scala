@@ -23,7 +23,6 @@ object SparkDataFrameApp {
     val path = "spark-dataframe-demo/src/main/resources/b.txt"
     createTable(path, "people", "age name", f)
     hiveContext.sql("SELECT age,name FROM people").show()
-    sc.textFile("")
 
     //UDF测试
     hiveContext.udf.register("getSourceType", getSourceType(_: String))
@@ -32,6 +31,7 @@ object SparkDataFrameApp {
     //json测试
     val test = hiveContext.read.json("spark-dataframe-demo/src/main/resources/a.json")
     test.printSchema()
+    test.cache()
     test.registerTempTable("test")
     hiveContext.sql("SELECT name.first FROM test").show()
   }
