@@ -1,5 +1,7 @@
 #spark内存概述
 
+spark 1.6发布了新的统一内存管理，TODO新内存概述。
+
 spark进程是以JVM进程运行的，可以通过-Xmx和-Xms配置堆栈大小，它是如何使用堆栈呢？下面是spark内存分配图。
 
 ![image](https://raw.githubusercontent.com/jacksu/utils4s/master/spark-knowledge/images/Spark-Heap-Usage.png)
