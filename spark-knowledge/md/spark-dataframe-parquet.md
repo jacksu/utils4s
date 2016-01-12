@@ -4,10 +4,11 @@ Apache Parquet作为文件格式最近获得了显著关注，假设你有一个
 
 首先建立一个表格：
  
-|| *first_name*	|| *last_name* || *gender* ||
-||Barack || Obama ||	M ||
-||Bill ||	Clinton ||	M ||
-||Hillary ||	Clinton ||	F ||
+| *first_name*	| *last_name* | gender |
+| ------------- |:-------------:| :-----:|
+|Barack | Obama |	M |
+|Bill |	Clinton |	M |
+|Hillary |	Clinton |	F |
 
  
 Spark SQL:
