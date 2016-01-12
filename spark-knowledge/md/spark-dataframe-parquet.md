@@ -14,7 +14,7 @@ Let’s load it in Spark SQL:
 val hc = new org.apache.spark.sql.hive.HiveContext(sc)
 import hc.implicits._
 case class Person(firstName: String, lastName: String, gender: String)
-val personRDD = sc.textFile("person").map(_.split("\t")).map(p =&gt; Person(p(0),p(1),p(2)))
+val personRDD = sc.textFile("person").map(_.split("\t")).map(p => Person(p(0),p(1),p(2)))
 val person = personRDD.toDF
 person.registerTempTable("person")
 val males = hc.sql("select * from person where gender='M'")
@@ -24,7 +24,7 @@ males.collect.foreach(println)
 Now let’s save this person SchemaRDD to Parquet format:
 
 ```scala
-person.saveAsParquetFile("person.parquet")
+person.write.parquet("person.parquet")
 ```
 
 There is an alternative way to save to Parquet if you have data already in the Hive table:
@@ -36,8 +36,8 @@ insert overwrite table person_parquet select * from person;
 Now let’s load this Parquet file. There is no need of using a case class anymore as schema is preserved in Parquet.
 
 ```scala
-val personDF = hc.load("person.parquet")
- personDF.registerAsTempTable("pp")
+val personDF = hc.read.parquet("person.parquet")
+personDF.registerAsTempTable("pp")
 val males = hc.sql("select * from pp where gender='M'")
 males.collect.foreach(println)
 ```

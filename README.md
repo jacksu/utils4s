@@ -87,6 +87,8 @@ QQ交流群 `432290475`
 
 [spark DataFrame测试用例](spark-dataframe-demo)
 
+[Hive Json加载](hive-json-demo)
+
 <h4 id="id2213">Spark 机器学习</h4>
 
 [spark TS](spark-timeseries-demo)
