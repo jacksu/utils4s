@@ -16,7 +16,7 @@ Tungsten-sort优化点主要有：
 * > Shuffle 文件的数量不能大于 16777216
 * > 序列化时，单条记录不能大于 128 MB
 
-![](http://spark-internals.books.yourtion.com/markdown/PNGfigures/spark_tungsten_sort_shuffle.png)
+![](https://raw.githubusercontent.com/jacksu/utils4s/master/spark-knowledge/images/spark_tungsten_sort_shuffle.png)
 
 ##优点
 
