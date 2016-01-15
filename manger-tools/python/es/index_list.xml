@@ -1,0 +1,22 @@
+<configuration>
+    <host auth="true" url="" user="es_admin" password="password">
+        <index>
+            <name>logstash-qky-pro-</name>
+            <period type="day">1</period>
+        </index>
+        <index>
+            <name>logstash-ucenter-oper-log-</name>
+            <period type="day">1</period>
+        </index>
+        <index>
+            <name>logstash-zhiliao_uc_access-</name>
+            <period type="day">1</period>
+        </index>
+    </host>
+    <host auth="false" url="http://10.253.2.125:9210/">
+        <index>
+            <name>yzt_errornotes_</name>
+            <period type="month">0</period>
+        </index>
+    </host>
+</configuration>

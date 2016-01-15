@@ -5,3 +5,5 @@ logs/*
 */target
 target
 checkpoint
+derby.log
+metastore_db/

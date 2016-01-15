@@ -66,6 +66,8 @@ QQ交流群 `432290475`
 
 [Twitter工具库](twitter-util-demo)（[twitter util](https://github.com/twitter/util)）
 
+[日常需要的一些脚本工具](manger-tools)
+
 <h2 id="id22">BigData库</h2>
 
 <h3 id="id221">Spark</h3>

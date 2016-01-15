@@ -1,0 +1,14 @@
+<configuration>
+    <host auth="true" url="http://10.253.2.125:9200/" user="es_admin" password="password">
+        <index>
+            <name>logstash-qky-pro</name>
+            <period>15</period>
+        </index>
+    </host>
+    <host auth="false" url="http://10.253.2.125:9210/">
+        <index>
+            <name>.marvel-</name>
+            <period>10</period>
+        </index>
+    </host>
+</configuration>
