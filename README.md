@@ -22,9 +22,7 @@ utils4s包含各种scala通用、好玩的工具库demo和使用文档，通过�
 
 [开源中国地址](http://git.oschina.net/jack.su/utils4s)
 
-QQ交流群 `432290475`
-
-<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=cea04391fbc7ae1c55b78476174b518a0ba3fdc040cd6abeadd1e85826c51f3b"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Scala Spark" title="Scala Spark"></a>
+QQ交流群 `432290475` <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=cea04391fbc7ae1c55b78476174b518a0ba3fdc040cd6abeadd1e85826c51f3b"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Scala Spark" title="Scala Spark"></a>
 
 微博：[**jacksu_**](http://weibo.com/jack4s)
 
