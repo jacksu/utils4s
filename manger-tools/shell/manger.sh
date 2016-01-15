@@ -5,6 +5,7 @@
 # Created by jacksu on 16/1/15.
 
 BASE_NAME=`dirname $0`
+NAME=`basename $0 | awk -F '.' '{print $1}'`
 
 function print_usage(){
  echo "manger.sh <start | status | restart | stop> [OPTION]"
@@ -62,7 +63,7 @@ do
   shift
 done
 
-PID="$BASE_NAME/.$0_pid"
+PID="$BASE_NAME/.${NAME}_pid"
 
 if [ -f "$PID" ]; then
   PID_VALUE=`cat $PID` > /dev/null 2>&1
