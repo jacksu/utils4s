@@ -66,7 +66,7 @@ QQ交流群 `432290475` <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?
 
 [Twitter工具库](twitter-util-demo)（[twitter util](https://github.com/twitter/util)）
 
-[日常需要的一些脚本工具](manger-tools)
+[日常脚本工具](manger-tools)
 
 <h2 id="id22">BigData库</h2>
 
