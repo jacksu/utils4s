@@ -61,6 +61,7 @@ spark streaming可以通过多种方式作为数据sources（包括kafka），�
 
 ##Kafka direct API
 为了WAL的性能损失和exactly-once，spark streaming1.3中使用Kafka direct API。非常巧妙，Spark driver计算下个batch的offsets，指导executor消费对应的topics和partitions。消费Kafka消息，就像消费文件系统文件一样。
+
 ![image](https://raw.githubusercontent.com/jacksu/utils4s/master/spark-knowledge/images/spark-streaming-kafka/spark-kafka-direct-api.png)
 
 1.不再需要kafka receivers，executor直接通过Kafka API消费数据
@@ -76,3 +77,7 @@ spark streaming可以通过多种方式作为数据sources（包括kafka），�
 ##参考
 [spark-streaming
 Recent Evolution of Zero Data Loss Guarantee in Spark Streaming With Kafka](http://getindata.com/blog/post/recent-evolution-of-zero-data-loss-guarantee-in-spark-streaming-with-kafka/)
+
+[Kafka direct API](http://www.jianshu.com/p/b4af851286e5)
+
+[spark streaming exactly-once](http://www.jianshu.com/p/885505daab29)
