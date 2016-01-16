@@ -9,3 +9,5 @@
 [spark shuffle之tungsten sort shuffle](md/tungsten-sort-shuffle.md)
 
 [spark DataFrame parquet](md/spark-dataframe-parquet.md)
+
+[Spark Streaming使用Kafka保证数据零丢失](md/spark_streaming使用Kafka保证数据零丢失.md)

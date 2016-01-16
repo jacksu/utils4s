@@ -79,6 +79,8 @@ QQ交流群 `432290475` <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?
 
 <h4 id="id2212">Spark Streaming</h4>
 
+[Spark Streaming使用Kafka保证数据零丢失](spark-knowledge/md/spark_streaming使用Kafka保证数据零丢失.md)
+
 [spark streaming测试用例](sparkstreaming-demo)
 
 [spark streaming源码解析](https://github.com/proflin/CoolplaySpark)
