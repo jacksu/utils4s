@@ -44,6 +44,7 @@ personDF.registerAsTempTable("pp")
 val males = hc.sql("select * from pp where gender='M'")
 males.collect.foreach(println)
 ```
+parquet文件的性能经过简单的group by操作测试，性能可以提高一倍多。
 
 Sometimes Parquet files pulled from other sources like Impala save String as binary. To fix that issue, add the following line right after creating SqlContext:
 

@@ -51,6 +51,7 @@
         <module>breeze-demo</module>
         <module>hive-json-demo</module>
         <module>akka-demo</module>
+        <module>spark-core-demo</module>
     </modules>
 
     <build>
