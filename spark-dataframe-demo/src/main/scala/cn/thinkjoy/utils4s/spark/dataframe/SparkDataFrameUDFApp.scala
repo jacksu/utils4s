@@ -1,6 +1,7 @@
 package cn.thinkjoy.utils4s.spark.dataframe
 
 /**
+  * http://zhangyi.farbox.com/post/kai-yuan-kuang-jia/udf-and-udaf-in-spark
   * Created by xbsu on 16/1/18.
   */
 object SparkDataFrameUDFApp extends SparkSQLSupport{
