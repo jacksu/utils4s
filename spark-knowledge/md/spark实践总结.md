@@ -31,4 +31,6 @@ groupByKey,key-value对没有combine在网络中传输，如果数据比较大�
 有许多函数比goupByKey好：
 
 1. 当你combine元素时，可以使用combineByKey，但是输入值类型和输出不一样
-2. 
+
+
+[Spark中的combineByKey](http://zhangyi.farbox.com/post/kai-yuan-kuang-jia/combinebykey-in-spark )
