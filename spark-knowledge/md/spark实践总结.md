@@ -1,5 +1,8 @@
 #spark实践总结
+
 ##避免使用groupByKey
+
+[**测试源码**](https://github.com/jacksu/utils4s/blob/master/spark-core-demo/src/main/scala/cn/thinkjoy/utils4s/spark/core/GroupByKeyAndReduceByKeyApp.scala)
 
 下面来看看groupByKey和reduceByKey的区别：
 
