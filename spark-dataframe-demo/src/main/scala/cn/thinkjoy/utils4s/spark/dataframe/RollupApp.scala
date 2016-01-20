@@ -4,11 +4,11 @@ import java.sql.Timestamp
 import java.sql.Date
 
 import org.apache.spark.sql.SQLContext
-import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.spark.{ SparkConf, SparkContext }
 import org.apache.spark.sql.hive.HiveContext
 
 /**
-  * 参考：http://zhangyi.farbox.com/post/kai-yuan-kuang-jia/rollup-in-spark
+ * 参考：http://zhangyi.farbox.com/post/kai-yuan-kuang-jia/rollup-in-spark
  * Created by xbsu on 16/1/18.
  */
 object RollupApp {
@@ -34,8 +34,7 @@ object RollupApp {
       (8, "Widgets R Us", 3000.00, 0.0, "四川省", "绵阳市", "2015-02-19".toTimestamp),
       (9, "Widgets R Us", 2000.00, 0.0, "广东省", "深圳市", "2015-02-20".toTimestamp),
       (10, "Ye Olde Widgete", 3000.00, 0.0, "广东省", "深圳市", "2015-02-28".toTimestamp),
-      (11, "Ye Olde Widgete", 3000.00, 0.0, "广东省", "广州市", "2015-02-28".toTimestamp)
-    )
+      (11, "Ye Olde Widgete", 3000.00, 0.0, "广东省", "广州市", "2015-02-28".toTimestamp))
 
     val saleDF = sqlContext.sparkContext.parallelize(sales, 4).toDF("id", "name", "sales", "discount", "province", "city", "saleDate")
     saleDF.registerTempTable("sales")
@@ -43,7 +42,7 @@ object RollupApp {
     val dataFrame = sqlContext.sql("select province,city,sales from sales")
     dataFrame.show
 
-    val resultDF = dataFrame.rollup($"province",  $"city").agg(Map("sales" -> "sum"))
+    val resultDF = dataFrame.rollup($"province", $"city").agg(Map("sales" -> "sum"))
     resultDF.show
   }
 }

@@ -1,6 +1,6 @@
 #spark实践总结
 
-##避免使用groupByKey
+##尽量少使用groupByKey
 
 [**测试源码**](https://github.com/jacksu/utils4s/blob/master/spark-core-demo/src/main/scala/cn/thinkjoy/utils4s/spark/core/GroupByKeyAndReduceByKeyApp.scala)
 
@@ -61,7 +61,7 @@
   }
 ```
 
-**注意`mapSideCombine=false`,partitioner是`HashPartitioner`**，但是groupByKey对小数据量比较好，比如一个key对应的个数少于10个。
+**注意`mapSideCombine=false`,partitioner是`HashPartitioner`**，但是groupByKey对小数据量比较好，一个key对应的个数少于10个。
 
 他们都调用了`combineByKeyWithClassTag`，我们再来看看`combineByKeyWithClassTag`的定义：
 
@@ -140,5 +140,9 @@ result不确定欧，单机执行不会调用mergeCombiners：
 
 `foldByKey`,`aggregateByKey`都是由combineByKey实现，并且`mapSideCombine=true`，因此可以使用这些函数替代goupByKey。
 
-
+###参考
 [Spark中的combineByKey](http://zhangyi.farbox.com/post/kai-yuan-kuang-jia/combinebykey-in-spark )
+
+[databricks gitbooks](https://databricks.gitbooks.io/databricks-spark-knowledge-base/content/best_practices/prefer_reducebykey_over_groupbykey.html)
+
+[在Spark中尽量少使用GroupByKey函数](http://www.iteblog.com/archives/1357)
