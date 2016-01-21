@@ -106,6 +106,8 @@ KeystoneML is a software framework, written in Scala, from the UC Berkeley AMPLa
 
 <h4 id="id2214">Spark 其它</h4>
 
+[databricks spark知识库](https://aiyanbo.gitbooks.io/databricks-spark-knowledge-base-zh-cn/content/)
+
 [spark学习知识总结](spark-knowledge)
 
 [Spark library for doing exploratory data analysis in a scalable way](https://github.com/vicpara/exploratory-data-analysis/)
