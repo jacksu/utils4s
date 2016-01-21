@@ -9,7 +9,7 @@
         *   [Spark](#id221)
             *   [Spark core](#id2211)
             *   [Spark Streaming](#id2212)
-            *   [Spark DataFrame](#id2213)
+            *   [Spark SQL](#id2213)
             *   [Spark 机器学习](#id2213)
             *   [Spark 其它](#id2214)
         *   [ES](#id222)
@@ -87,19 +87,28 @@ QQ交流群 `432290475` <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?
 
 [基于spark streaming的聚合分析(Sparkta)](https://github.com/Stratio/Sparkta)
 
-<h4 id="id2213">Spark DataFrame</h4>
+<h4 id="id2213">Spark SQL</h4>
 
 [spark DataFrame测试用例](spark-dataframe-demo)
 
 [Hive Json加载](hive-json-demo)
 
+[SparkSQL架构设计和代码分析](https://github.com/marsishandsome/SparkSQL-Internal)
+
 <h4 id="id2213">Spark 机器学习</h4>
+
+[spark机器学习源码解析](https://github.com/endymecy/spark-ml-source-analysis)
+
+[KeyStoneML](http://keystone-ml.org)
+KeystoneML is a software framework, written in Scala, from the UC Berkeley AMPLab designed to simplify the construction of large scale, end-to-end, machine learning pipelines with Apache Spark.
 
 [spark TS](spark-timeseries-demo)
 
 <h4 id="id2214">Spark 其它</h4>
 
 [spark学习知识总结](spark-knowledge)
+
+[Spark library for doing exploratory data analysis in a scalable way](https://github.com/vicpara/exploratory-data-analysis/)
 
 [图处理(cassovary)](https://github.com/twitter/cassovary)
 
