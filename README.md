@@ -11,7 +11,8 @@
             *   [Spark Streaming](#id2212)
             *   [Spark SQL](#id2213)
             *   [Spark 机器学习](#id2213)
-            *   [Spark 其它](#id2214)
+            *   [Spark Zeppelin](#id2214)
+            *   [Spark 其它](#id2215)
         *   [ES](#id222)
     *   [贡献代码步骤](#id23)
     *   [贡献者](#id24)
@@ -104,7 +105,15 @@ KeystoneML is a software framework, written in Scala, from the UC Berkeley AMPLa
 
 [spark TS](spark-timeseries-demo)
 
-<h4 id="id2214">Spark 其它</h4>
+<h4 id="id2214">Spark zeppelin</h4>
+
+[**Z-Manager**](https://github.com/NFLabs/z-manager)--Simplify getting Zeppelin up and running
+
+[**zeppelin**](https://github.com/apache/incubator-zeppelin)--a web-based notebook that enables interactive data analytics. You can make beautiful data-driven, interactive and collaborative documents with SQL, Scala and more.
+
+[**helium**](http://s.apache.org/helium)--Brings Zeppelin to data analytics application platform
+
+<h4 id="id2215">Spark 其它</h4>
 
 [databricks spark知识库](https://aiyanbo.gitbooks.io/databricks-spark-knowledge-base-zh-cn/content/)
 
