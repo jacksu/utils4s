@@ -43,6 +43,8 @@ QQ交流群 `432290475` <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?
 
 [scala学习用例](scala-demo)
 
+[scala入门笔记](http://blog.djstudy.net/2016/01/24/scala-rumen-biji/)
+
 <h2 id="id21">common库</h2>
 
 [日志操作](log-demo)（[log4s](https://github.com/Log4s/log4s)）
