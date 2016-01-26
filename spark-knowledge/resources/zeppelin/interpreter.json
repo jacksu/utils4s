@@ -1,0 +1,144 @@
+{
+  "interpreterSettings": {
+    "2AGQQSEAN": {
+      "id": "2AGQQSEAN",
+      "name": "sh",
+      "group": "sh",
+      "properties": {},
+      "interpreterGroup": [
+        {
+          "class": "org.apache.zeppelin.shell.ShellInterpreter",
+          "name": "sh"
+        }
+      ],
+      "option": {
+        "remote": true
+      }
+    },
+    "2AHG28XSJ": {
+      "id": "2AHG28XSJ",
+      "name": "md",
+      "group": "md",
+      "properties": {},
+      "interpreterGroup": [
+        {
+          "class": "org.apache.zeppelin.markdown.Markdown",
+          "name": "md"
+        }
+      ],
+      "option": {
+        "remote": true
+      }
+    },
+    "2AEJNH3KK": {
+      "id": "2AEJNH3KK",
+      "name": "spark",
+      "group": "spark",
+      "properties": {
+        "spark.cores.max": "",
+        "spark.yarn.jar": "",
+        "master": "local[*]",
+        "zeppelin.spark.maxResult": "10000",
+        "zeppelin.dep.localrepo": "local-repo",
+        "spark.app.name": "Zeppelin",
+        "spark.executor.memory": "512m",
+        "zeppelin.spark.useHiveContext": "false",
+        "zeppelin.spark.concurrentSQL": "false",
+        "args": "",
+        "spark.home": "/opt/spark-1.5.2-bin-hadoop2.6",
+        "zeppelin.pyspark.python": "python",
+        "zeppelin.dep.additionalRemoteRepository": "spark-packages,http://dl.bintray.com/spark-packages/maven,false;"
+      },
+      "interpreterGroup": [
+        {
+          "class": "org.apache.zeppelin.spark.SparkInterpreter",
+          "name": "spark"
+        },
+        {
+          "class": "org.apache.zeppelin.spark.PySparkInterpreter",
+          "name": "pyspark"
+        },
+        {
+          "class": "org.apache.zeppelin.spark.SparkSqlInterpreter",
+          "name": "sql"
+        },
+        {
+          "class": "org.apache.zeppelin.spark.DepInterpreter",
+          "name": "dep"
+        }
+      ],
+      "option": {
+        "remote": true
+      }
+    },
+    "2AHCKV2A2": {
+      "id": "2AHCKV2A2",
+      "name": "spark-cluster",
+      "group": "spark",
+      "properties": {
+        "spark.cores.max": "",
+        "spark.yarn.jar": "",
+        "master": "yarn-client",
+        "zeppelin.spark.maxResult": "1000",
+        "spark.executor.uri": "",
+        "zeppelin.dep.localrepo": "local-repo",
+        "spark.app.name": "zeppelin-root",
+        "spark.executor.memory": "",
+        "zeppelin.spark.useHiveContext": "true",
+        "args": "",
+        "spark.home": "/opt/cloudera/parcels/CDH/lib/spark/",
+        "zeppelin.spark.concurrentSQL": "true",
+        "zeppelin.pyspark.python": "python",
+        "zeppelin.dep.additionalRemoteRepository": "spark-packages,http://dl.bintray.com/spark-packages/maven,false;"
+      },
+      "interpreterGroup": [
+        {
+          "class": "org.apache.zeppelin.spark.SparkInterpreter",
+          "name": "spark"
+        },
+        {
+          "class": "org.apache.zeppelin.spark.PySparkInterpreter",
+          "name": "pyspark"
+        },
+        {
+          "class": "org.apache.zeppelin.spark.SparkSqlInterpreter",
+          "name": "sql"
+        },
+        {
+          "class": "org.apache.zeppelin.spark.DepInterpreter",
+          "name": "dep"
+        }
+      ],
+      "option": {
+        "remote": true
+      }
+    },
+    "2AJ7D1X15": {
+      "id": "2AJ7D1X15",
+      "name": "test",
+      "group": "sh",
+      "properties": {},
+      "interpreterGroup": [
+        {
+          "class": "org.apache.zeppelin.shell.ShellInterpreter",
+          "name": "sh"
+        }
+      ],
+      "option": {
+        "remote": true
+      }
+    }
+  },
+  "interpreterBindings": {
+    "2A94M5J1Z": [
+      "2AHCKV2A2",
+      "2AHG28XSJ",
+      "2AGQQSEAN"
+    ],
+    "2BBWW24SA": [
+      "2AEJNH3KK",
+      "2AHG28XSJ",
+      "2AGQQSEAN"
+    ]
+  }
+}
