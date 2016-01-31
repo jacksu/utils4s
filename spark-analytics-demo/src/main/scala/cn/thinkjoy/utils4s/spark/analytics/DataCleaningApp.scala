@@ -1,6 +1,7 @@
 package cn.thinkjoy.utils4s.spark.analytics
 
 import org.apache.spark.{SparkContext, SparkConf}
+import StatsWithMissing._
 
 /**
  * Created by jacksu on 16/1/27.
@@ -24,6 +25,7 @@ object DataCleaningApp {
     parsed.cache()
 
     val matchCounts = parsed.map(md => md.matched).countByValue()
+    //Map不可以排序，只能转化为Seq
     val matchCountsSeq = matchCounts.toSeq
     matchCountsSeq.sortBy(_._2).reverse.foreach(println)
 
@@ -32,6 +34,12 @@ object DataCleaningApp {
     })
     stats.foreach(println)
 
+    //测试NAStatCounter
+    val nas1 = NAStatCounter(10.0)
+    nas1.add(2.1)
+    val nas2 = NAStatCounter(Double.NaN)
+    nas1.merge(nas2)
+    println(nas1.toString)
     val nasRDD = parsed.map(md => {
       md.scores.map(d => NAStatCounter(d))
     })
@@ -39,12 +47,9 @@ object DataCleaningApp {
       n1.zip(n2).map { case (a, b) => a.merge(b) }
     })
     reduced.foreach(println)
-    //测试NAStatCounter
-    val nas1 = NAStatCounter(10.0)
-    nas1.add(2.1)
-    val nas2 = NAStatCounter(Double.NaN)
-    nas1.merge(nas2)
-    println(nas1.toString)
+
+    statsWithMissing(parsed.filter(_.matched).map(_.scores)).foreach(println)
+
   }
 
   /**
