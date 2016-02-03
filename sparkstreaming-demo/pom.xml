@@ -11,10 +11,10 @@
     <artifactId>sparkstreaming-demo</artifactId>
     <inceptionYear>2008</inceptionYear>
     <properties>
-        <!--spark stream scala 2.11 is error-->
+        <!--spark stream scala 2.11 is error, 2.11 for mapWithState-->
         <scala.version>2.10.4</scala.version>
         <soft.scala.version>2.10</soft.scala.version>
-       <spark.version>1.4.0</spark.version>
+       <spark.version>1.6.0</spark.version>
     </properties>
     <dependencies>
         <dependency>

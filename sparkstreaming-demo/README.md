@@ -33,5 +33,8 @@ spark-submit --master local[5] --class cn.thinkjoy.utils4s.sparkstreaming.SparkS
 
 在实际环境中，只需去掉 `--master local[5]`
 
+
+新增spark streaming中mapWithState测试
+
 ##参考
 [整合Kafka到Spark Streaming——代码示例和挑战](http://dataunion.org/6308.html)
