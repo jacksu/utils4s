@@ -10,5 +10,21 @@
     <groupId>cn.thinkjoy.utils4s.spark.analytics</groupId>
     <artifactId>spark-analytics</artifactId>
     <inceptionYear>2008</inceptionYear>
-
+    <properties>
+        <spark.version>1.4.0</spark.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>2.6.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_${soft.scala.version}</artifactId>
+            <version>${spark.version}</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 </project>
