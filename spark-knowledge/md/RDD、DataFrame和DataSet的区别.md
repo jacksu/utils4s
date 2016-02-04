@@ -1,3 +1,5 @@
+> RDD、DataFrame和DataSet是容易产生混淆的概念，必须对其相互之间对比，才可以知道其中异同。
+
 ##RDD和DataFrame
 
 ![RDD-DataFrame](https://raw.githubusercontent.com/jacksu/utils4s/master/spark-knowledge/images/rdd-dataframe-dataset/rdd-dataframe.png)
