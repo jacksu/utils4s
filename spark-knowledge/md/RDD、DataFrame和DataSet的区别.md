@@ -27,11 +27,57 @@ RDD API是函数式的，强调不变性，在大部分场景下倾向于创建�
 得到的优化执行计划在转换成物 理执行计划的过程中，还可以根据具体的数据源的特性将过滤条件下推至数据源内。最右侧的物理执行计划中Filter之所以消失不见，就是因为溶入了用于执行最终的读取操作的表扫描节点内。 
 
 对于普通开发者而言，查询优化 器的意义在于，即便是经验并不丰富的程序员写出的次优的查询，也可以被尽量转换为高效的形式予以执行。 
+
+##RDD和DataSet
+
+* > DataSet以Catalyst逻辑执行计划表示，并且数据以编码的二进制形式被存储，不需要反序列化就可以执行sorting、shuffle等操作。
+
+* > DataSet创立需要一个显式的Encoder，把对象序列化为二进制，可以把对象的scheme映射为Spark
+ SQl类型，然而RDD依赖于运行时反射机制。
+
+通过上面两点，DataSet的性能比RDD的要好很多，可以参见[3]
+
 ##DataFrame和DataSet
 
-Dataset可以认为是DataFrame的一个特例，主要区别是Dataset每一个record存储的是一个强类型值而不是一个Row。这个强类型的值是以编码的二进制形式被存储的，这种存储格式可以不用反序列化就直接可以被上面的算子（例如sort，Shuffle等）操作。所以在创建Dataset的时候需要指定用于这个编码工作的Encoder。一些需要强类型的地方就可以使用Dataset API，不失DataFrame的那些优点，同时又可以帮我们做类型检查。
+Dataset可以认为是DataFrame的一个特例，主要区别是Dataset每一个record存储的是一个强类型值而不是一个Row。因此具有如下三个特点：
+
+* > DataSet可以在编译时检查类型
+
+* > 并且是面向对象的编程接口。用wordcount举例：
+
+```scala
+//DataFrame
+
+// Load a text file and interpret each line as a java.lang.String
+val ds = sqlContext.read.text("/home/spark/1.6/lines").as[String]
+val result = ds
+  .flatMap(_.split(" "))               // Split on whitespace
+  .filter(_ != "")                     // Filter empty words
+  .toDF()                              // Convert to DataFrame to perform aggregation / sorting
+  .groupBy($"value")                   // Count number of occurences of each word
+  .agg(count("*") as "numOccurances")
+  .orderBy($"numOccurances" desc)      // Show most common words first
+```
+
+```scala
+//DataSet,完全使用scala编程，不要切换到DataFrame
+
+val wordCount = 
+  ds.flatMap(_.split(" "))
+    .filter(_ != "")
+    .groupBy(_.toLowerCase()) // Instead of grouping on a column expression (i.e. $"value") we pass a lambda function
+    .count()
+```
+
+* > 后面版本DataFrame会继承DataSet，DataFrame是面向Spark SQL的接口。
+
+DataFrame和DataSet可以相互转化，`df.as[ElementType]`这样可以把DataFrame转化为DataSet，`ds.toDF()`这样可以把DataSet转化为DataFrame。
 
 ##参考
-[Spark SQL结构化分析](http://www.iteye.com/news/30658)
+[1] [Spark SQL结构化分析](http://www.iteye.com/news/30658)
 
-[解读2015之Spark篇：新生态系统的形成](http://www.infoq.com/cn/articles/2015-Review-Spark)
+[2] [解读2015之Spark篇：新生态系统的形成](http://www.infoq.com/cn/articles/2015-Review-Spark)
+
+[3] [Introducing Spark Datasets](https://databricks.com/blog/2016/01/04/introducing-spark-datasets.html)
+
+[4] [databricks example](https://docs.cloud.databricks.com/docs/spark/1.6/index.html#examples/Dataset%20Wordcount.html)
