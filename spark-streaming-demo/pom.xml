@@ -8,7 +8,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.thinkjoy.utils4s.sparkstreaming</groupId>
-    <artifactId>sparkstreaming-demo</artifactId>
+    <artifactId>spark-streaming-demo</artifactId>
     <inceptionYear>2008</inceptionYear>
     <properties>
         <!--spark stream scala 2.11 is error, 2.11 for mapWithState-->

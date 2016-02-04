@@ -41,7 +41,7 @@
         <module>lamma-demo</module>
         <module>nscala-time-demo</module>
         <module>json4s-demo</module>
-        <module>sparkstreaming-demo</module>
+        <module>spark-streaming-demo</module>
         <module>resources-demo</module>
         <module>file-demo</module>
         <module>analysis-demo</module>
