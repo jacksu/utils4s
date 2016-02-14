@@ -8,6 +8,7 @@ import java.util.regex.{Matcher, Pattern}
 /**
   * Created by xbsu on 16/2/5.
   */
+
 class AccessLogParser extends Serializable{
   private val ddd = "\\d{1,3}"                      // at least 1 but not more than 3 times (possessive)
   private val ip = s"($ddd\\.$ddd\\.$ddd\\.$ddd)?"  // like `123.456.7.89`
@@ -53,6 +54,7 @@ class AccessLogParser extends Serializable{
       AccessLogParser.nullObjectAccessLogRecord
     }
   }
+
   private def buildAccessLogRecord(matcher: Matcher) = {
     AccessLogRecord(
       matcher.group(1),
@@ -90,12 +92,12 @@ object AccessLogParser {
     * @param field A String that looks like "[21/Jul/2009:02:48:13 -0700]"
     */
   def parseDateField(field: String): Option[java.util.Date] = {
-    val dateRegex = "\\[(.*?) .+]"
+    val dateRegex = "\\[(.*?) .*]"
     val datePattern = Pattern.compile(dateRegex)
     val dateMatcher = datePattern.matcher(field)
     if (dateMatcher.find) {
       val dateString = dateMatcher.group(1)
-      println("***** DATE STRING" + dateString)
+      println(s"***** DATE STRING $dateString ******")
       // HH is 0-23; kk is 1-24
       val dateFormat = new SimpleDateFormat("dd/MMM/yyyy:HH:mm:ss", Locale.ENGLISH)
       allCatch.opt(dateFormat.parse(dateString))  // return Option[Date]
