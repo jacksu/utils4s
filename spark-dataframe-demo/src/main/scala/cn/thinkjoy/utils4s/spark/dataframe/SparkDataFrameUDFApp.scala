@@ -1,20 +1,20 @@
 package cn.thinkjoy.utils4s.spark.dataframe
 
-import java.sql.{Date, Timestamp}
+import java.sql.{ Date, Timestamp }
 import java.util.Calendar
 
 import cn.thinkjoy.utils4s.spark.dataframe.SparkDataFrameApp._
 import org.apache.spark.SparkConf
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.Row
-import org.apache.spark.sql.expressions.{MutableAggregationBuffer, UserDefinedAggregateFunction}
+import org.apache.spark.sql.expressions.{ MutableAggregationBuffer, UserDefinedAggregateFunction }
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types._
 
 /**
-  * http://zhangyi.farbox.com/post/kai-yuan-kuang-jia/udf-and-udaf-in-spark
-  * Created by xbsu on 16/1/18.
-  */
+ * http://zhangyi.farbox.com/post/kai-yuan-kuang-jia/udf-and-udaf-in-spark
+ * Created by xbsu on 16/1/18.
+ */
 object SparkDataFrameUDFApp extends SparkSQLSupport("UDFApp") {
   def main(args: Array[String]) {
 
@@ -24,8 +24,8 @@ object SparkDataFrameUDFApp extends SparkSQLSupport("UDFApp") {
     //TODO 查找sqlCOntext和hiveContext差别
 
     /**
-      * UDF
-      */
+     * UDF
+     */
 
     //更详细解释：http://zhangyi.farbox.com/post/kai-yuan-kuang-jia/udf-and-udaf-in-spark
     sqlContext.udf.register("getSourceType", getSourceType(_: String))
@@ -35,10 +35,8 @@ object SparkDataFrameUDFApp extends SparkSQLSupport("UDFApp") {
 
     sqlContext.sql("select * from people where longLength(name,10)").show()
 
-
     //若使用DataFrame的API，则可以以字符串的形式将UDF传入
     df.filter("longLength(name,10)").show()
-
 
     //DataFrame的API也可以接收Column对象，
     //可以用$符号来包裹一个字符串表示一个Column。
@@ -47,24 +45,23 @@ object SparkDataFrameUDFApp extends SparkSQLSupport("UDFApp") {
     //而是要用定义在org.apache.spark.sql.functions中的udf方法来接收一个函数。
     //这种方式无需register
     import org.apache.spark.sql.functions._
-    val longLength = udf((bookTitle: String, length: Int) => bookTitle.length > length)
+    val longLength = udf((bookTitle: String, length: Int) ⇒ bookTitle.length > length)
     import sqlContext.implicits._
     //用$符号来包裹一个字符串表示一个Column
     df.filter(longLength($"name", lit(10))).show()
 
     /**
-      * UDAF(User Defined Aggregate Function)
-      * 例子：当我要对销量执行年度同比计算，就需要对当年和上一年的销量分别求和，
-      * 然后再利用同比公式进行计算
-      */
+     * UDAF(User Defined Aggregate Function)
+     * 例子：当我要对销量执行年度同比计算，就需要对当年和上一年的销量分别求和，
+     * 然后再利用同比公式进行计算
+     */
 
     val sales = Seq(
       (1, "Widget Co", 1000.00, 0.00, "AZ", "2014-01-01"),
       (2, "Acme Widgets", 2000.00, 500.00, "CA", "2014-02-01"),
       (3, "Widgetry", 1000.00, 200.00, "CA", "2015-01-11"),
       (4, "Widgets R Us", 2000.00, 0.0, "CA", "2015-02-19"),
-      (5, "Ye Olde Widgete", 3000.00, 0.0, "MA", "2015-02-28")
-    )
+      (5, "Ye Olde Widgete", 3000.00, 0.0, "MA", "2015-02-28"))
 
     val salesRows = sc.parallelize(sales, 4)
     val salesDF = salesRows.toDF("id", "name", "sales", "discount", "state", "saleDate")
@@ -82,10 +79,10 @@ object SparkDataFrameUDFApp extends SparkSQLSupport("UDFApp") {
   }
 
   /**
-    * UDF验证
-    * @param remark
-    * @return
-    */
+   * UDF验证
+   * @param remark
+   * @return
+   */
   def getSourceType(remark: String): Int = {
     val typePattern = "yzt_web|iphone|IPHONE|ANDROID".r
     val logType = typePattern.findFirstIn(remark).getOrElse("")
@@ -100,10 +97,10 @@ object SparkDataFrameUDFApp extends SparkSQLSupport("UDFApp") {
   }
 
   /**
-    * 对输入的内容转化为Row
-    * @param line
-    * @return
-    */
+   * 对输入的内容转化为Row
+   * @param line
+   * @return
+   */
   def f(line: RDD[String]): RDD[Row] = {
     line.map(_.split(" ")).map(array ⇒ Row(array(0), array(1)))
   }
@@ -114,7 +111,6 @@ case class DateRange(startDate: Timestamp, endDate: Timestamp) {
     targetDate.before(endDate) && targetDate.after(startDate)
   }
 }
-
 
 class YearOnYearUDAF(current: DateRange) extends UserDefinedAggregateFunction {
   //处理的列

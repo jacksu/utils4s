@@ -1,43 +1,41 @@
 package cn.thinkjoy.utils4s.spark.dataframe
 
-
 import org.apache.http.client.methods.HttpGet
-import org.apache.http.impl.client.{HttpClients}
+import org.apache.http.impl.client.{ HttpClients }
 import org.json4s.JsonAST.JString
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
 
-
 /**
-  * Created by xbsu on 16/2/4.
-  */
+ * Created by xbsu on 16/2/4.
+ */
 
 class LogAnalytics {
 
   /**
-    * 通过IP返回IP所属城市
-    * @param ip
-    * @return
-    */
+   * 通过IP返回IP所属城市
+   * @param ip
+   * @return
+   */
   def ip2City(ip: String): String = {
     val location = ip2Location(ip)
-    if (location.nonEmpty){
+    if (location.nonEmpty) {
       compact(render(parse(location) \ "city"))
-    }else {
+    } else {
       ""
     }
   }
 
   /**
-    * 通过IP返回IP所属城市
-    * @param ip
-    * @return
-    */
+   * 通过IP返回IP所属城市
+   * @param ip
+   * @return
+   */
   def ip2Province(ip: String): String = {
     val location = ip2Location(ip)
-    if (location.nonEmpty){
+    if (location.nonEmpty) {
       compact(render(parse(location) \ "province"))
-    }else {
+    } else {
       ""
     }
   }
@@ -57,10 +55,10 @@ class LogAnalytics {
   }
 
   /**
-    * 暂时没有超时，只是简单实现
-    * @param ip
-    * @return
-    */
+   * 暂时没有超时，只是简单实现
+   * @param ip
+   * @return
+   */
   private def ip2Location(ip: String): String = {
     val url = "http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip=" + ip
     val result = scala.io.Source.fromURL(url).mkString.split("=")(1)

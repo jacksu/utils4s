@@ -3,18 +3,21 @@ package cn.thinkjoy.utils4s.spark.dataframe
 import java.sql.Timestamp
 import java.sql.Date
 
-import org.apache.spark.sql.SQLContext
-import org.apache.spark.{ SparkConf, SparkContext }
+import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.sql.hive.HiveContext
+import org.apache.spark.sql._
 
 /**
- * 参考：http://zhangyi.farbox.com/post/kai-yuan-kuang-jia/rollup-in-spark
- * Created by xbsu on 16/1/18.
- */
+  * 参考：http://zhangyi.farbox.com/post/kai-yuan-kuang-jia/rollup-in-spark
+  * 数据pivot，比如统计商品四个季度的销售量，可以参考：https://databricks.com/blog/2016/02/09/reshaping-data-with-pivot-in-spark.html
+  * Created by xbsu on 16/1/18.
+  */
 object RollupApp {
+
   implicit class StringFuncs(str: String) {
     def toTimestamp = new Timestamp(Date.valueOf(str).getTime)
   }
+
   def main(args: Array[String]) {
     @transient
     val conf = new SparkConf().setAppName("test").setMaster("local")
@@ -44,5 +47,8 @@ object RollupApp {
 
     val resultDF = dataFrame.rollup($"province", $"city").agg(Map("sales" -> "sum"))
     resultDF.show
+
+    //可以通过groupBy实现rollup
+    dataFrame.groupBy("province", "city").agg(Map("sales" -> "sum")).show()
   }
 }

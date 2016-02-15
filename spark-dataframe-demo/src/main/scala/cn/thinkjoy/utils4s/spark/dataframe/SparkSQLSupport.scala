@@ -3,7 +3,7 @@ package cn.thinkjoy.utils4s.spark.dataframe
 import cn.thinkjoy.utils4s.spark.dataframe.SparkDataFrameApp._
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.types.{ StringType, StructField, StructType }
-import org.apache.spark.sql.{DataFrame, Row, SQLContext}
+import org.apache.spark.sql.{ DataFrame, Row, SQLContext }
 import org.apache.spark.sql.hive.HiveContext
 import org.apache.spark.{ SparkContext, SparkConf }
 
@@ -35,7 +35,7 @@ class SparkSQLSupport(val appName: String, val master: String = "local") {
     path: String,
     table: String,
     schemaString: String,
-    f: RDD[String] ⇒ RDD[Row]):DataFrame = {
+    f: RDD[String] ⇒ RDD[Row]): DataFrame = {
 
     val people = sc.textFile(path)
     val schema =
@@ -56,10 +56,10 @@ class SparkSQLSupport(val appName: String, val master: String = "local") {
   }
 
   /**
-    * 经过测试不需要指定schema，默认会补全字段
-    * @param path
-    * @param table
-    */
+   * 经过测试不需要指定schema，默认会补全字段
+   * @param path
+   * @param table
+   */
   def createTableFromJson(
     path: String,
     table: String): Unit = {

@@ -1,8 +1,8 @@
 package cn.thinkjoy.utils4s.spark.dataframe.udf
 
 /**
-  * Created by jacksu on 16/2/5.
-  */
+ * Created by jacksu on 16/2/5.
+ */
 
 case class AccessLogRecord(
   clientIpAddress: String, // should be an ip address, but may also be the hostname if hostname-lookups are enabled
@@ -14,7 +14,7 @@ case class AccessLogRecord(
   bytesSent: String, // may be `-`
   referer: String, // where the visitor came from
   userAgent: String // long string to represent the browser and OS
-)
+  )
 
 case class UserAgent(
   family: String,
