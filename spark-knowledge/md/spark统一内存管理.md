@@ -6,4 +6,15 @@ spark从1.6.0开始内存管理发生了变化，原来的内存管理由[Static
 
 1.6.0的统一内存管理如下：
 
-![Spark-Memory-Management-1.6.0](https://raw.githubusercontent.com/jacksu/utils4s/master/spark-knowledge/images/Spark-Memory-Management-1.6.0.png)	
+![Spark-Memory-Management-1.6.0](https://raw.githubusercontent.com/jacksu/utils4s/master/spark-knowledge/images/Spark-Memory-Management-1.6.0.png)
+
+主要有三部分组成：
+
+1 **Reserved Memory**
+
+这部分内存是预留给**系统**使用，是固定不变的。
+
+
+##参考
+
+[spark memory management](http://0x0fff.com/spark-memory-management/)
