@@ -1,7 +1,8 @@
 #!/bin/bash
 
 ###################
-#主要用于程序启动和停止时
+#主要用于程序启动和停止时，只需要修改函数start中COMMAND
+#COMMAND赋值为你要操作的程序即可
 # Created by jacksu on 16/1/15.
 
 BASE_NAME=`dirname $0`
