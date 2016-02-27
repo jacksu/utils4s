@@ -127,7 +127,7 @@ KeystoneML is a software framework, written in Scala, from the UC Berkeley AMPLa
 
 [基于spark进行地理位置分析(gagellan)](https://github.com/harsha2010/magellan)
 
-[spark submit east 2016 ppt](http://vdisk.weibo.com/s/BP8uNBea_C2Af?from=page_100505_profile&wvr=6)
+[spark summit east 2016 ppt](http://vdisk.weibo.com/s/BP8uNBea_C2Af?from=page_100505_profile&wvr=6)
 
 <h3 id="id222">ES</h3>
 
