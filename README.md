@@ -78,6 +78,8 @@ QQ交流群 `432290475` <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?
 <h3 id="id221">Spark</h3>
 
 <h4 id="id2211">Spark core</h4>
+[spark介绍](http://litaotao.github.io/introduction-to-spark)
+
 [一个不错的spark学习互动课程](http://www.hubwiz.com/class/5449c691e564e50960f1b7a9)
 
 [spark 设计与实现](http://spark-internals.books.yourtion.com/index.html)
