@@ -26,7 +26,7 @@ object BasicOper {
 
     // Find the time difference between two dates
     val newYear2016 = new DateTime withDate(2016, 1, 1)
-    val daysToYear2016 = (DateTime.now to newYear2016 toPeriod PeriodType.days).getDays // 到2016年一月ㄧ日還有幾天
+    val daysToYear2016 = (newYear2016 to DateTime.now toPeriod PeriodType.days).getDays // 到2016年一月ㄧ日還有幾天
 
     // ========== manipulate dates =============
     println(DateTime.parse("2014-07-7") + 1.days)
