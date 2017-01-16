@@ -142,6 +142,9 @@ KeystoneML is a software framework, written in Scala, from the UC Berkeley AMPLa
 <h3 id="id222">ES</h3>
 
 [ES 非阻塞scala客户端](https://github.com/sksamuel/elastic4s)
+
+<h3 id="id223">Beam</h3>
+[Apache Beam：下一代的数据处理标准](http://geek.csdn.net/news/detail/134167)
 <h2 id="id23">贡献代码步骤</h2>
 1. 首先 fork 我的项目
 2. 把 fork 过去的项目也就是你的项目 clone 到你的本地
