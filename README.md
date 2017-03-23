@@ -88,6 +88,7 @@ QQ交流群 `432290475` <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?
 
 [spark 设计与实现](http://spark-internals.books.yourtion.com/index.html)
 
+[aliyun-spark-deploy-tool](https://github.com/aliyun/aliyun-spark-deploy-tool)---Spark on ECS
 <h4 id="id2212">Spark Streaming</h4>
 
 [Spark Streaming使用Kafka保证数据零丢失](spark-knowledge/md/spark_streaming使用Kafka保证数据零丢失.md)
