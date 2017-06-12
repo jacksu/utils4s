@@ -35,7 +35,7 @@ QQ交流群 `432290475（已满），请加530066027` <a target="_blank" href="h
 
 说明：scala语法学习过程中，用例代码都放在scala-demo模块下。
 
-[快学scala电子书](http://vdisk.weibo.com/s/BP8uNBebkvpOe)(推荐入门级书)
+[快学scala电子书](http://vdisk.weibo.com/s/C7NmUN3g8gH46)(推荐入门级书)
 
 [scala理解的比较深](http://hongjiang.info/scala/)
 
