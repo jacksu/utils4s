@@ -49,6 +49,8 @@ QQ交流群 `432290475（已满），请加530066027` <a target="_blank" href="h
 
 [scala入门笔记](http://blog.djstudy.net/2016/01/24/scala-rumen-biji/)
 
+[Databricks风格](https://github.com/databricks/scala-style-guide)
+
 <h2 id="id21">common库</h2>
 
 [日志操作](log-demo)（[log4s](https://github.com/Log4s/log4s)）
