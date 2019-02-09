@@ -1,5 +1,8 @@
 <h1 id="id1">utils4s</h1>
 
+公众号：
+![公众号](picture/datacube.jpg)
+
 [![Build Status](https://travis-ci.org/jacksu/utils4s.svg?branch=master)](https://travis-ci.org/jacksu/utils4s)[![Join the chat at https://gitter.im/jacksu/utils4s](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jacksu/utils4s?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 *   [utils4s](#id1)
@@ -164,3 +167,4 @@ KeystoneML is a software framework, written in Scala, from the UC Berkeley AMPLa
 
 <h2 id="id24">贡献者</h2>
 [jjcipher](https://github.com/jjcipher)
+
